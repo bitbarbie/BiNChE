@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: net.sourceforge.metware.binche.ConsoleTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 77.473 sec <<< FAILURE!
+testConsole(net.sourceforge.metware.binche.ConsoleTest)  Time elapsed: 77.472 sec  <<< ERROR!
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Arrays.java:2894)
+	at java.lang.AbstractStringBuilder.expandCapacity(AbstractStringBuilder.java:117)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:407)
+	at java.lang.StringBuffer.append(StringBuffer.java:241)
+	at cytoscape.data.readers.TextFileReader.read(TextFileReader.java:82)
+	at BiNGO.reader.BiNGOOntologyOboReader.<init>(BiNGOOntologyOboReader.java:89)
+	at BiNGO.reader.BiNGOOntologyChebiOboReader.<init>(BiNGOOntologyChebiOboReader.java:29)
+	at BiNGO.parser.ChEBIAnnotationParser.setCustomOntology(ChEBIAnnotationParser.java:340)
+	at BiNGO.parser.ChEBIAnnotationParser.calculate(ChEBIAnnotationParser.java:212)
+	at BiNGO.parser.AnnotationParser.run(AnnotationParser.java:771)
+	at net.sourceforge.metware.binche.BiNChe.execute(BiNChe.java:61)
+	at net.sourceforge.metware.binche.execs.BiNCheExec.runDefault(BiNCheExec.java:117)
+	at net.sourceforge.metware.binche.execs.BiNCheExec.process(BiNCheExec.java:76)
+	at net.sourceforge.metware.binche.ConsoleTest.testConsole(ConsoleTest.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:616)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)

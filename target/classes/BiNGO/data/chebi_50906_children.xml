@@ -1,0 +1,2897 @@
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<getLiteEntityResponse xmlns="http://www.ebi.ac.uk/webservices/chebi">
+<return>
+<ListElement>
+<chebiId>CHEBI:24432</chebiId>
+<chebiAsciiName>biological role</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:33232</chebiId>
+<chebiAsciiName>application</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51086</chebiId>
+<chebiAsciiName>chemical role</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:15339</chebiId>
+<chebiAsciiName>acceptor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:17891</chebiId>
+<chebiAsciiName>donor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:22586</chebiId>
+<chebiAsciiName>antioxidant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:22695</chebiId>
+<chebiAsciiName>base</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:25573</chebiId>
+<chebiAsciiName>nodulation factor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:25728</chebiId>
+<chebiAsciiName>osmolyte</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:25944</chebiId>
+<chebiAsciiName>pesticide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:33280</chebiId>
+<chebiAsciiName>molecular messenger</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:33286</chebiId>
+<chebiAsciiName>agrochemical</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:33292</chebiId>
+<chebiAsciiName>fuel</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:33893</chebiId>
+<chebiAsciiName>reagent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35209</chebiId>
+<chebiAsciiName>label</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35222</chebiId>
+<chebiAsciiName>inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35223</chebiId>
+<chebiAsciiName>catalyst</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35225</chebiId>
+<chebiAsciiName>buffer</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35703</chebiId>
+<chebiAsciiName>xenobiotic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37527</chebiId>
+<chebiAsciiName>acid</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37958</chebiId>
+<chebiAsciiName>dye</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:47867</chebiId>
+<chebiAsciiName>indicator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48318</chebiId>
+<chebiAsciiName>fragrance</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48578</chebiId>
+<chebiAsciiName>radical scavenger</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50406</chebiId>
+<chebiAsciiName>probe</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50907</chebiId>
+<chebiAsciiName>deaminating agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50913</chebiId>
+<chebiAsciiName>fixative</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51087</chebiId>
+<chebiAsciiName>protecting group</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:52209</chebiId>
+<chebiAsciiName>aetiopathogenetic role</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:52210</chebiId>
+<chebiAsciiName>pharmacological role</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:52217</chebiId>
+<chebiAsciiName>pharmaceutical</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:52290</chebiId>
+<chebiAsciiName>mitogen</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:53000</chebiId>
+<chebiAsciiName>epitope</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:53337</chebiId>
+<chebiAsciiName>tissue adhesive</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:53431</chebiId>
+<chebiAsciiName>chain carrier</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59132</chebiId>
+<chebiAsciiName>antigen</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59174</chebiId>
+<chebiAsciiName>hapten</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60218</chebiId>
+<chebiAsciiName>mimotope</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:62803</chebiId>
+<chebiAsciiName>fuel additive</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63064</chebiId>
+<chebiAsciiName>crystallisation adjutant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63247</chebiId>
+<chebiAsciiName>reducing agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63248</chebiId>
+<chebiAsciiName>oxidising agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63490</chebiId>
+<chebiAsciiName>explosive</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63908</chebiId>
+<chebiAsciiName>film-forming compound</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63923</chebiId>
+<chebiAsciiName>sclerotherapy agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64047</chebiId>
+<chebiAsciiName>food additive</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64088</chebiId>
+<chebiAsciiName>incretin mimetic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64297</chebiId>
+<chebiAsciiName>reaction intermediate</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64345</chebiId>
+<chebiAsciiName>MALDI matrix material</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64857</chebiId>
+<chebiAsciiName>cosmetic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:46787</chebiId>
+<chebiAsciiName>solvent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:33281</chebiId>
+<chebiAsciiName>antimicrobial agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48354</chebiId>
+<chebiAsciiName>polar solvent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51268</chebiId>
+<chebiAsciiName>drying control chemical additive</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:15022</chebiId>
+<chebiAsciiName>electron donor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:17654</chebiId>
+<chebiAsciiName>electron acceptor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:22153</chebiId>
+<chebiAsciiName>acaricide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:22583</chebiId>
+<chebiAsciiName>antifeedant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:23092</chebiId>
+<chebiAsciiName>chemosterilant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:23240</chebiId>
+<chebiAsciiName>chromophore</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:23357</chebiId>
+<chebiAsciiName>cofactor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:23888</chebiId>
+<chebiAsciiName>drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:24527</chebiId>
+<chebiAsciiName>herbicide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:24852</chebiId>
+<chebiAsciiName>insecticide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:25212</chebiId>
+<chebiAsciiName>metabolite</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:25435</chebiId>
+<chebiAsciiName>mutagen</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:25491</chebiId>
+<chebiAsciiName>nematicide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:25512</chebiId>
+<chebiAsciiName>neurotransmitter</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:25943</chebiId>
+<chebiAsciiName>pesticide synergist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:26130</chebiId>
+<chebiAsciiName>biological pigment</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:26155</chebiId>
+<chebiAsciiName>plant growth regulator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:33229</chebiId>
+<chebiAsciiName>vitamin</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:33284</chebiId>
+<chebiAsciiName>nutrient</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:33287</chebiId>
+<chebiAsciiName>fertilizer</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:33288</chebiId>
+<chebiAsciiName>rodenticide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:33289</chebiId>
+<chebiAsciiName>avicide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:33295</chebiId>
+<chebiAsciiName>diagnostic agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:33904</chebiId>
+<chebiAsciiName>molluscicide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35195</chebiId>
+<chebiAsciiName>surfactant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35197</chebiId>
+<chebiAsciiName>lumiphore</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35210</chebiId>
+<chebiAsciiName>spin label</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35211</chebiId>
+<chebiAsciiName>radioactive label</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35221</chebiId>
+<chebiAsciiName>antimetabolite</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35224</chebiId>
+<chebiAsciiName>effector</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35226</chebiId>
+<chebiAsciiName>spin probe</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35230</chebiId>
+<chebiAsciiName>fossil fuel</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35231</chebiId>
+<chebiAsciiName>nuclear fuel</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35617</chebiId>
+<chebiAsciiName>flavouring agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38161</chebiId>
+<chebiAsciiName>chelator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38849</chebiId>
+<chebiAsciiName>blood substitute</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:39011</chebiId>
+<chebiAsciiName>Good's buffer substance</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:39276</chebiId>
+<chebiAsciiName>fumigant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:39442</chebiId>
+<chebiAsciiName>fluorescent probe</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48705</chebiId>
+<chebiAsciiName>agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48706</chebiId>
+<chebiAsciiName>antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50242</chebiId>
+<chebiAsciiName>enzyme reactivator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50266</chebiId>
+<chebiAsciiName>prodrug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50408</chebiId>
+<chebiAsciiName>visual indicator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50566</chebiId>
+<chebiAsciiName>nitric oxide donor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50684</chebiId>
+<chebiAsciiName>cross-linking reagent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50902</chebiId>
+<chebiAsciiName>genotoxin</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50903</chebiId>
+<chebiAsciiName>carcinogenic agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50904</chebiId>
+<chebiAsciiName>allergenic agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50905</chebiId>
+<chebiAsciiName>teratogenic agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50908</chebiId>
+<chebiAsciiName>hepatotoxic agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50909</chebiId>
+<chebiAsciiName>nephrotoxic agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50910</chebiId>
+<chebiAsciiName>neurotoxic agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50911</chebiId>
+<chebiAsciiName>neurotoxin</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50912</chebiId>
+<chebiAsciiName>cardiotoxic agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51076</chebiId>
+<chebiAsciiName>antifouling biocide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51121</chebiId>
+<chebiAsciiName>fluorescent dye</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51166</chebiId>
+<chebiAsciiName>Wittig reagent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51237</chebiId>
+<chebiAsciiName>Grignard reagent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51267</chebiId>
+<chebiAsciiName>swelling agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:52941</chebiId>
+<chebiAsciiName>phosphate protecting group</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:52943</chebiId>
+<chebiAsciiName>carboxylic acid protecting group</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59163</chebiId>
+<chebiAsciiName>biomarker</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60646</chebiId>
+<chebiAsciiName>chiral reagent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60809</chebiId>
+<chebiAsciiName>adjuvant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60816</chebiId>
+<chebiAsciiName>immunogen</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60832</chebiId>
+<chebiAsciiName>tubulin modulator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:61015</chebiId>
+<chebiAsciiName>nephrotoxin</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:62049</chebiId>
+<chebiAsciiName>acyl donor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:62488</chebiId>
+<chebiAsciiName>signalling molecule</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63047</chebiId>
+<chebiAsciiName>food emulsifier</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63146</chebiId>
+<chebiAsciiName>insulin release inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63173</chebiId>
+<chebiAsciiName>T-cell proliferation inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63175</chebiId>
+<chebiAsciiName>peptidomimetic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63330</chebiId>
+<chebiAsciiName>sodium-dependent Pi-transporter inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63962</chebiId>
+<chebiAsciiName>Hsp90 inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64577</chebiId>
+<chebiAsciiName>flour treatment agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64588</chebiId>
+<chebiAsciiName>glycine transporter 1 inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:13193</chebiId>
+<chebiAsciiName>hydrogen acceptor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:17499</chebiId>
+<chebiAsciiName>hydrogen donor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:21241</chebiId>
+<chebiAsciiName>vitamin C</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:22333</chebiId>
+<chebiAsciiName>alkylating agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:22676</chebiId>
+<chebiAsciiName>auxin</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:22917</chebiId>
+<chebiAsciiName>phytogenic insecticide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:22986</chebiId>
+<chebiAsciiName>calcium ionophore</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:23354</chebiId>
+<chebiAsciiName>coenzyme</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:23582</chebiId>
+<chebiAsciiName>defoliant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:24020</chebiId>
+<chebiAsciiName>fat-soluble vitamin</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:24853</chebiId>
+<chebiAsciiName>intercalator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:24869</chebiId>
+<chebiAsciiName>ionophore</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:26013</chebiId>
+<chebiAsciiName>pheromone</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:26157</chebiId>
+<chebiAsciiName>plant growth stimulator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:26348</chebiId>
+<chebiAsciiName>prosthetic group</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:26619</chebiId>
+<chebiAsciiName>secondary metabolite</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:27311</chebiId>
+<chebiAsciiName>volatile oil component</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:27314</chebiId>
+<chebiAsciiName>water-soluble vitamin</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35219</chebiId>
+<chebiAsciiName>plant growth retardant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35220</chebiId>
+<chebiAsciiName>primary metabolite</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35337</chebiId>
+<chebiAsciiName>central nervous system stimulant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35441</chebiId>
+<chebiAsciiName>antiinfective drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35442</chebiId>
+<chebiAsciiName>antiparasitic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35470</chebiId>
+<chebiAsciiName>central nervous system drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35471</chebiId>
+<chebiAsciiName>psychotropic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35472</chebiId>
+<chebiAsciiName>anti-inflammatory drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35488</chebiId>
+<chebiAsciiName>central nervous system depressant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35493</chebiId>
+<chebiAsciiName>antipyretic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35498</chebiId>
+<chebiAsciiName>diuretic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35523</chebiId>
+<chebiAsciiName>bronchodilator agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35526</chebiId>
+<chebiAsciiName>hypoglycemic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35554</chebiId>
+<chebiAsciiName>cardiovascular drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35610</chebiId>
+<chebiAsciiName>antineoplastic agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35620</chebiId>
+<chebiAsciiName>vasodilator agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35674</chebiId>
+<chebiAsciiName>antihypertensive drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35679</chebiId>
+<chebiAsciiName>antilipemic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35821</chebiId>
+<chebiAsciiName>anticholesteremic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35842</chebiId>
+<chebiAsciiName>antirheumatic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35845</chebiId>
+<chebiAsciiName>gout suppressant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35846</chebiId>
+<chebiAsciiName>renal agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36063</chebiId>
+<chebiAsciiName>oxytocic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36333</chebiId>
+<chebiAsciiName>local anaesthetic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36710</chebiId>
+<chebiAsciiName>interferon inducer</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37334</chebiId>
+<chebiAsciiName>diagnostic imaging agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37338</chebiId>
+<chebiAsciiName>radioopaque medium</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38070</chebiId>
+<chebiAsciiName>anti-arrhythmia drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38147</chebiId>
+<chebiAsciiName>cardiotonic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38215</chebiId>
+<chebiAsciiName>calcium channel blocker</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38706</chebiId>
+<chebiAsciiName>pediculicide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38807</chebiId>
+<chebiAsciiName>calcium channel agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38809</chebiId>
+<chebiAsciiName>ryanodine receptor modulator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38828</chebiId>
+<chebiAsciiName>nonionic surfactant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38867</chebiId>
+<chebiAsciiName>anaesthetic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38869</chebiId>
+<chebiAsciiName>general anaesthetic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38999</chebiId>
+<chebiAsciiName>GABA-gated chloride channel antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:39000</chebiId>
+<chebiAsciiName>sodium channel modulator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:39141</chebiId>
+<chebiAsciiName>Bronsted acid</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:39142</chebiId>
+<chebiAsciiName>Bronsted base</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:39143</chebiId>
+<chebiAsciiName>Lewis acid</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:39144</chebiId>
+<chebiAsciiName>Lewis base</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:39369</chebiId>
+<chebiAsciiName>pyrethroid ether acaricide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:39412</chebiId>
+<chebiAsciiName>bridged diphenyl acaricide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:39415</chebiId>
+<chebiAsciiName>dinitrophenol insecticide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:39456</chebiId>
+<chebiAsciiName>antiglaucoma drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:47868</chebiId>
+<chebiAsciiName>photosensitizing agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48407</chebiId>
+<chebiAsciiName>antiparkinson drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48422</chebiId>
+<chebiAsciiName>angiogenesis inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48525</chebiId>
+<chebiAsciiName>calcimimetic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48668</chebiId>
+<chebiAsciiName>gamma secretase modulator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48675</chebiId>
+<chebiAsciiName>antifibrinolytic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48676</chebiId>
+<chebiAsciiName>fibrin modulating drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48887</chebiId>
+<chebiAsciiName>bile acid metabolite</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:49103</chebiId>
+<chebiAsciiName>drug metabolite</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:49110</chebiId>
+<chebiAsciiName>peripheral nervous system drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:49201</chebiId>
+<chebiAsciiName>anti-ulcer drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:49323</chebiId>
+<chebiAsciiName>contraceptive drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50141</chebiId>
+<chebiAsciiName>bronchoconstrictor agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50177</chebiId>
+<chebiAsciiName>dermatologic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50184</chebiId>
+<chebiAsciiName>ion transport inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50241</chebiId>
+<chebiAsciiName>cholinesterase reactivator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50247</chebiId>
+<chebiAsciiName>antidote</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50248</chebiId>
+<chebiAsciiName>hematologic agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50249</chebiId>
+<chebiAsciiName>anticoagulant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50267</chebiId>
+<chebiAsciiName>protective agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50407</chebiId>
+<chebiAsciiName>acid-base indicator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50409</chebiId>
+<chebiAsciiName>adsorption indicator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50410</chebiId>
+<chebiAsciiName>colour indicator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50411</chebiId>
+<chebiAsciiName>one-colour indicator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50412</chebiId>
+<chebiAsciiName>two-colour indicator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50427</chebiId>
+<chebiAsciiName>platelet aggregation inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50503</chebiId>
+<chebiAsciiName>laxative</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50504</chebiId>
+<chebiAsciiName>osmotic diuretic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50505</chebiId>
+<chebiAsciiName>sweetening agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50507</chebiId>
+<chebiAsciiName>appetite depressant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50509</chebiId>
+<chebiAsciiName>potassium channel blocker</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50510</chebiId>
+<chebiAsciiName>potassium channel modulator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50513</chebiId>
+<chebiAsciiName>mydriatic agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50514</chebiId>
+<chebiAsciiName>vasoconstrictor agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50646</chebiId>
+<chebiAsciiName>bone density conservation agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50689</chebiId>
+<chebiAsciiName>reproductive control drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50691</chebiId>
+<chebiAsciiName>abortifacient</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50733</chebiId>
+<chebiAsciiName>nutraceutical</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50739</chebiId>
+<chebiAsciiName>estrogen receptor modulator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50748</chebiId>
+<chebiAsciiName>antipsoriatic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50751</chebiId>
+<chebiAsciiName>anti-estrogen</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50779</chebiId>
+<chebiAsciiName>appetite enhancer</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50857</chebiId>
+<chebiAsciiName>anti-allergic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50864</chebiId>
+<chebiAsciiName>insulin-sensitizing drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50919</chebiId>
+<chebiAsciiName>antiemetic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50926</chebiId>
+<chebiAsciiName>angiogenesis modulating agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50927</chebiId>
+<chebiAsciiName>angiogenesis inducing agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51177</chebiId>
+<chebiAsciiName>antitussive</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51217</chebiId>
+<chebiAsciiName>fluorochrome</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51371</chebiId>
+<chebiAsciiName>muscle relaxant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51372</chebiId>
+<chebiAsciiName>neuromuscular agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:52271</chebiId>
+<chebiAsciiName>squaraine dye</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:52726</chebiId>
+<chebiAsciiName>proteasome inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:53121</chebiId>
+<chebiAsciiName>adenosine A2A receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:53142</chebiId>
+<chebiAsciiName>P2Y2 receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:55323</chebiId>
+<chebiAsciiName>antidiarrhoeal drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:55324</chebiId>
+<chebiAsciiName>gastrointestinal drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:55347</chebiId>
+<chebiAsciiName>vitamin K antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:55350</chebiId>
+<chebiAsciiName>neurokinin-1 receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:55351</chebiId>
+<chebiAsciiName>substance P receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59010</chebiId>
+<chebiAsciiName>antiseborrheic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59683</chebiId>
+<chebiAsciiName>antipruritic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59752</chebiId>
+<chebiAsciiName>bolaamphiphile</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59844</chebiId>
+<chebiAsciiName>antihyperplasia drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59864</chebiId>
+<chebiAsciiName>depigmentation drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59941</chebiId>
+<chebiAsciiName>amphiphile</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60575</chebiId>
+<chebiAsciiName>phenoxy herbicide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60576</chebiId>
+<chebiAsciiName>phenoxyacetic herbicide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60643</chebiId>
+<chebiAsciiName>N-methyl-D-aspartate receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60797</chebiId>
+<chebiAsciiName>NMDA receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60798</chebiId>
+<chebiAsciiName>excitatory amino acid antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60807</chebiId>
+<chebiAsciiName>anaesthesia adjuvant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:61026</chebiId>
+<chebiAsciiName>bile therapy drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:61950</chebiId>
+<chebiAsciiName>microtubule-stabilising agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:61966</chebiId>
+<chebiAsciiName>metabotropic glutamate receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:62215</chebiId>
+<chebiAsciiName>allelochemical</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:62868</chebiId>
+<chebiAsciiName>hepatoprotective agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:62873</chebiId>
+<chebiAsciiName>odorant receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63114</chebiId>
+<chebiAsciiName>sphingosine-1-phosphate receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63172</chebiId>
+<chebiAsciiName>S1P receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63457</chebiId>
+<chebiAsciiName>fibroblast growth factor receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63562</chebiId>
+<chebiAsciiName>glucocorticoid receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63673</chebiId>
+<chebiAsciiName>chemokine receptor 5 antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63726</chebiId>
+<chebiAsciiName>neuroprotective agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63794</chebiId>
+<chebiAsciiName>retinoid X receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63936</chebiId>
+<chebiAsciiName>alpha1B-adrenoceptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63951</chebiId>
+<chebiAsciiName>estrogen receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63957</chebiId>
+<chebiAsciiName>adenosine A1 receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63963</chebiId>
+<chebiAsciiName>metabotropic glutamate receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64018</chebiId>
+<chebiAsciiName>protein kinase C agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64102</chebiId>
+<chebiAsciiName>AMPA receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64105</chebiId>
+<chebiAsciiName>protein kinase G agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64106</chebiId>
+<chebiAsciiName>protein kinase agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64338</chebiId>
+<chebiAsciiName>K-ATP channel agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64477</chebiId>
+<chebiAsciiName>monolignol</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64589</chebiId>
+<chebiAsciiName>glycine receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64933</chebiId>
+<chebiAsciiName>melanin synthesis inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:65057</chebiId>
+<chebiAsciiName>adenosine A1 receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:22587</chebiId>
+<chebiAsciiName>antiviral agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:23018</chebiId>
+<chebiAsciiName>carbonic anhydrase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:23924</chebiId>
+<chebiAsciiName>enzyme inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:24127</chebiId>
+<chebiAsciiName>fungicide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:25078</chebiId>
+<chebiAsciiName>luciferin</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:27780</chebiId>
+<chebiAsciiName>detergent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:33282</chebiId>
+<chebiAsciiName>antibacterial agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35480</chebiId>
+<chebiAsciiName>analgesic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35481</chebiId>
+<chebiAsciiName>non-narcotic analgesic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35482</chebiId>
+<chebiAsciiName>opioid analgesic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35487</chebiId>
+<chebiAsciiName>aldehyde dehydrogenase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35544</chebiId>
+<chebiAsciiName>cyclooxygenase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35625</chebiId>
+<chebiAsciiName>beta-lactamase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35634</chebiId>
+<chebiAsciiName>xanthine oxidase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35705</chebiId>
+<chebiAsciiName>immunosuppressive agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35856</chebiId>
+<chebiAsciiName>lipoxygenase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35942</chebiId>
+<chebiAsciiName>neurotransmitter agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37416</chebiId>
+<chebiAsciiName>RNA polymerase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37670</chebiId>
+<chebiAsciiName>protease inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37699</chebiId>
+<chebiAsciiName>protein kinase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37700</chebiId>
+<chebiAsciiName>protein kinase C inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37733</chebiId>
+<chebiAsciiName>cholinesterase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37957</chebiId>
+<chebiAsciiName>histaminergic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37962</chebiId>
+<chebiAsciiName>adrenergic agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38234</chebiId>
+<chebiAsciiName>DNA polymerase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38317</chebiId>
+<chebiAsciiName>HPPD inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38323</chebiId>
+<chebiAsciiName>cholinergic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38456</chebiId>
+<chebiAsciiName>ecdysone agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38462</chebiId>
+<chebiAsciiName>acetylcholinesterase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38623</chebiId>
+<chebiAsciiName>monoamine oxidase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38637</chebiId>
+<chebiAsciiName>tyrosine kinase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48001</chebiId>
+<chebiAsciiName>protein synthesis inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48219</chebiId>
+<chebiAsciiName>disinfectant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48278</chebiId>
+<chebiAsciiName>serotonergic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48353</chebiId>
+<chebiAsciiName>serine proteinase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48406</chebiId>
+<chebiAsciiName>catechol O-methyltransferase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48560</chebiId>
+<chebiAsciiName>dopaminergic agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:49200</chebiId>
+<chebiAsciiName>proton pump inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:49205</chebiId>
+<chebiAsciiName>CETP inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50103</chebiId>
+<chebiAsciiName>excitatory amino acid agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50218</chebiId>
+<chebiAsciiName>phosphodiesterase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50269</chebiId>
+<chebiAsciiName>alcohol dehydrogenase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50276</chebiId>
+<chebiAsciiName>topoisomerase I inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50380</chebiId>
+<chebiAsciiName>4-hydroxyphenyl-pyruvate dioxygenase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50382</chebiId>
+<chebiAsciiName>glucosylceramide synthase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50390</chebiId>
+<chebiAsciiName>NAD(P)H:quinone oxidoreductase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50423</chebiId>
+<chebiAsciiName>NADPH oxidase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50444</chebiId>
+<chebiAsciiName>adenosine phosphodiesterase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50445</chebiId>
+<chebiAsciiName>adenosine deaminase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50469</chebiId>
+<chebiAsciiName>phospholipase A2 inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50502</chebiId>
+<chebiAsciiName>dihydropteroate synthetase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50568</chebiId>
+<chebiAsciiName>phosphodiesterase III inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50627</chebiId>
+<chebiAsciiName>alpha-amylase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50628</chebiId>
+<chebiAsciiName>alpha-glucoside hydrolase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50629</chebiId>
+<chebiAsciiName>cyclooxygenase 2 inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50630</chebiId>
+<chebiAsciiName>cyclooxygenase 1 inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50635</chebiId>
+<chebiAsciiName>urease inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50643</chebiId>
+<chebiAsciiName>farnesyl pyrophosphate synthetase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50664</chebiId>
+<chebiAsciiName>matrix metalloproteinase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50683</chebiId>
+<chebiAsciiName>folic acid reductase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50696</chebiId>
+<chebiAsciiName>penicillin binding protein 3 inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50750</chebiId>
+<chebiAsciiName>topoisomerase II inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50781</chebiId>
+<chebiAsciiName>5alpha-reductase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50788</chebiId>
+<chebiAsciiName>3beta-hydroxysteroid dehydrogenase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50790</chebiId>
+<chebiAsciiName>aromatase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50792</chebiId>
+<chebiAsciiName>estrogen receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50847</chebiId>
+<chebiAsciiName>immunological adjuvant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50914</chebiId>
+<chebiAsciiName>phosphatidylinositol-3-OH kinase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50916</chebiId>
+<chebiAsciiName>lipid kinase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51068</chebiId>
+<chebiAsciiName>miotic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51374</chebiId>
+<chebiAsciiName>GABA agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:52216</chebiId>
+<chebiAsciiName>photobiochemical role</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:52424</chebiId>
+<chebiAsciiName>glycoside hydrolase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:53353</chebiId>
+<chebiAsciiName>GHB receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:53559</chebiId>
+<chebiAsciiName>topoisomerase IV inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:53659</chebiId>
+<chebiAsciiName>diamine oxidase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:53746</chebiId>
+<chebiAsciiName>inosine monophosphate dehydrogenase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59105</chebiId>
+<chebiAsciiName>acid--amino-acid ligase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59107</chebiId>
+<chebiAsciiName>metalloendopeptidase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59285</chebiId>
+<chebiAsciiName>squalene monooxygenase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59321</chebiId>
+<chebiAsciiName>aromatic-L-amino-acid decarboxylase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59517</chebiId>
+<chebiAsciiName>DNA synthesis inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59647</chebiId>
+<chebiAsciiName>serine palmitoyltransferase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59672</chebiId>
+<chebiAsciiName>chitin synthase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59739</chebiId>
+<chebiAsciiName>electrophilic reagent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59740</chebiId>
+<chebiAsciiName>nucleophilic reagent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59997</chebiId>
+<chebiAsciiName>tyrosinase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60186</chebiId>
+<chebiAsciiName>Ca(2+)-transporting ATPase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60258</chebiId>
+<chebiAsciiName>peptidase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60280</chebiId>
+<chebiAsciiName>glutaminase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60545</chebiId>
+<chebiAsciiName>spiroketalamine fungicide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60593</chebiId>
+<chebiAsciiName>conazole fungicide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60598</chebiId>
+<chebiAsciiName>opioid agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60600</chebiId>
+<chebiAsciiName>amide fungicide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60644</chebiId>
+<chebiAsciiName>bridged diphenyl fungicide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60688</chebiId>
+<chebiAsciiName>tryptophan synthase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60788</chebiId>
+<chebiAsciiName>affinity label</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60901</chebiId>
+<chebiAsciiName>riboflavin synthetase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:61115</chebiId>
+<chebiAsciiName>histone deacetylase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:61774</chebiId>
+<chebiAsciiName>inositol phosphorylceramide synthase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:61908</chebiId>
+<chebiAsciiName>nitric oxide synthase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:62089</chebiId>
+<chebiAsciiName>glutamate synthase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:62434</chebiId>
+<chebiAsciiName>anaplastic lymphoma kinase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:62530</chebiId>
+<chebiAsciiName>sphingosine N-acyltransferase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:62608</chebiId>
+<chebiAsciiName>aconitase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:62609</chebiId>
+<chebiAsciiName>phosphonopyruvate hydrolase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:62670</chebiId>
+<chebiAsciiName>phosphoprotein phosphatase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:62913</chebiId>
+<chebiAsciiName>poly(ADP-ribose) polymerase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:62915</chebiId>
+<chebiAsciiName>sialyltransferase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:62966</chebiId>
+<chebiAsciiName>cytochrome c oxidase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63090</chebiId>
+<chebiAsciiName>purine nucleoside phosphorylase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63156</chebiId>
+<chebiAsciiName>alcohol oxidase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63157</chebiId>
+<chebiAsciiName>cystathionine-beta-synthase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63158</chebiId>
+<chebiAsciiName>carnitine palmitoyltransferase-1 inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63332</chebiId>
+<chebiAsciiName>alkaline phosphatase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63510</chebiId>
+<chebiAsciiName>Na(+)/K(+)-transporting ATPase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63720</chebiId>
+<chebiAsciiName>thymidylate synthase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63721</chebiId>
+<chebiAsciiName>
+glycinamide ribonucleotide formyltransferase inhibitor
+</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63932</chebiId>
+<chebiAsciiName>tyrosine 3-monooxygenase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63958</chebiId>
+<chebiAsciiName>cellulose synthesis inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64033</chebiId>
+<chebiAsciiName>arachidonoylethanolamide amidohydrolase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64133</chebiId>
+<chebiAsciiName>protein farnesyltransferase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64152</chebiId>
+<chebiAsciiName>cysteine protease inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64237</chebiId>
+<chebiAsciiName>N-acetylglucosamine phosphotransferase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64411</chebiId>
+<chebiAsciiName>geranylgeranyl diphosphate synthase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64416</chebiId>
+<chebiAsciiName>arogenate dehydrogenase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64570</chebiId>
+<chebiAsciiName>serine hydroxymethyltransferase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64670</chebiId>
+<chebiAsciiName>thioredoxin reductase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64696</chebiId>
+<chebiAsciiName>acyl-CoA:cholesterol acyltransferase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64697</chebiId>
+<chebiAsciiName>acyl-CoA:cholesterol acyltransferase 2 inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64763</chebiId>
+<chebiAsciiName>
+phosphatidylinositol-specific phospholipase C inhibitor
+</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64919</chebiId>
+<chebiAsciiName>diacylglycerol O-acyltransferase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64920</chebiId>
+<chebiAsciiName>DNA ligase (ATP) inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64922</chebiId>
+<chebiAsciiName>leukocyte elastase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64924</chebiId>
+<chebiAsciiName>hepatitis C protease inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64926</chebiId>
+<chebiAsciiName>serine protease inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64943</chebiId>
+<chebiAsciiName>chymotrypsin inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64946</chebiId>
+<chebiAsciiName>anti-HIV agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64947</chebiId>
+<chebiAsciiName>anti-HIV-1 agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64949</chebiId>
+<chebiAsciiName>anti-HIV-2 agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64952</chebiId>
+<chebiAsciiName>anti-HSV agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64953</chebiId>
+<chebiAsciiName>anti-HSV-1 agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64954</chebiId>
+<chebiAsciiName>anti-HSV-2 agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64955</chebiId>
+<chebiAsciiName>heparanase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64964</chebiId>
+<chebiAsciiName>arachidonate 5-lipoxygenase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64995</chebiId>
+<chebiAsciiName>arachidonate 12-lipoxygenase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64996</chebiId>
+<chebiAsciiName>arachidonate 15-lipoxygenase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:65001</chebiId>
+<chebiAsciiName>triacylglycerol lipase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:65053</chebiId>
+<chebiAsciiName>arginine decarboxylase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:65056</chebiId>
+<chebiAsciiName>fructose-bisphosphatase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:25355</chebiId>
+<chebiAsciiName>mitochondrial respiratory-chain inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:26413</chebiId>
+<chebiAsciiName>pyrethroid insecticide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35497</chebiId>
+<chebiAsciiName>androgen antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35524</chebiId>
+<chebiAsciiName>sympathomimetic agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35640</chebiId>
+<chebiAsciiName>adrenergic uptake inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35678</chebiId>
+<chebiAsciiName>histamine agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35718</chebiId>
+<chebiAsciiName>antifungal drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35941</chebiId>
+<chebiAsciiName>serotonergic agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36043</chebiId>
+<chebiAsciiName>antimicrobial drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37886</chebiId>
+<chebiAsciiName>adrenergic agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37887</chebiId>
+<chebiAsciiName>adrenergic antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37955</chebiId>
+<chebiAsciiName>H1-receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37956</chebiId>
+<chebiAsciiName>histamine antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37961</chebiId>
+<chebiAsciiName>H2-receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38324</chebiId>
+<chebiAsciiName>cholinergic agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38325</chebiId>
+<chebiAsciiName>muscarinic agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:39116</chebiId>
+<chebiAsciiName>pyrethroid ester insecticide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:39351</chebiId>
+<chebiAsciiName>pyrethroid ether insecticide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:47958</chebiId>
+<chebiAsciiName>nicotinic agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48279</chebiId>
+<chebiAsciiName>serotonergic antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48539</chebiId>
+<chebiAsciiName>alpha-adrenergic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48540</chebiId>
+<chebiAsciiName>beta-adrenergic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48561</chebiId>
+<chebiAsciiName>dopaminergic antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48873</chebiId>
+<chebiAsciiName>cholinergic antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48876</chebiId>
+<chebiAsciiName>muscarinic antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:49020</chebiId>
+<chebiAsciiName>hormone antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:49023</chebiId>
+<chebiAsciiName>prostaglandin antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:49159</chebiId>
+<chebiAsciiName>leukotriene antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50433</chebiId>
+<chebiAsciiName>platelet glycoprotein-IIb/IIIa receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50671</chebiId>
+<chebiAsciiName>antithyroid drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50827</chebiId>
+<chebiAsciiName>antiparathyroid drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50837</chebiId>
+<chebiAsciiName>estrogen antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50843</chebiId>
+<chebiAsciiName>antimineralocorticoid</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50949</chebiId>
+<chebiAsciiName>serotonin uptake inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51039</chebiId>
+<chebiAsciiName>dopamine uptake inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51060</chebiId>
+<chebiAsciiName>hormone agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51065</chebiId>
+<chebiAsciiName>dopamine agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51373</chebiId>
+<chebiAsciiName>GABA agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51451</chebiId>
+<chebiAsciiName>endothelin receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59229</chebiId>
+<chebiAsciiName>GnRH antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59680</chebiId>
+<chebiAsciiName>vasopressin receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59727</chebiId>
+<chebiAsciiName>vasopressin receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60599</chebiId>
+<chebiAsciiName>mu-opioid agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60601</chebiId>
+<chebiAsciiName>delta-opioid agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60603</chebiId>
+<chebiAsciiName>kappa-opioid agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60605</chebiId>
+<chebiAsciiName>opioid receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60606</chebiId>
+<chebiAsciiName>opioid receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60649</chebiId>
+<chebiAsciiName>glucagon receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:61016</chebiId>
+<chebiAsciiName>angiotensin receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:63533</chebiId>
+<chebiAsciiName>gonadotropin releasing hormone agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64154</chebiId>
+<chebiAsciiName>H3-receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64155</chebiId>
+<chebiAsciiName>H4-receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64176</chebiId>
+<chebiAsciiName>H3-receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64371</chebiId>
+<chebiAsciiName>neurotransmitter transporter modulator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64406</chebiId>
+<chebiAsciiName>cathepsin K inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64571</chebiId>
+<chebiAsciiName>NMDA receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35457</chebiId>
+<chebiAsciiName>angiotensin-converting enzyme inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35660</chebiId>
+<chebiAsciiName>HIV protease inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35664</chebiId>
+<chebiAsciiName>hydroxymethylglutaryl-CoA reductase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38461</chebiId>
+<chebiAsciiName>carbamate insecticide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:52629</chebiId>
+<chebiAsciiName>HIV-1 RNase H inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:23530</chebiId>
+<chebiAsciiName>cytokinin</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:24621</chebiId>
+<chebiAsciiName>hormone</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:25442</chebiId>
+<chebiAsciiName>mycotoxin</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:26841</chebiId>
+<chebiAsciiName>synthetic auxin</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:27026</chebiId>
+<chebiAsciiName>toxin</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35443</chebiId>
+<chebiAsciiName>anthelminthic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35469</chebiId>
+<chebiAsciiName>antidepressant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35473</chebiId>
+<chebiAsciiName>tranquilizing drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35475</chebiId>
+<chebiAsciiName>non-steroidal anti-inflammatory drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35499</chebiId>
+<chebiAsciiName>hallucinogen</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35623</chebiId>
+<chebiAsciiName>anticonvulsant</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35684</chebiId>
+<chebiAsciiName>antiplatyhelmintic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35717</chebiId>
+<chebiAsciiName>sedative drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35818</chebiId>
+<chebiAsciiName>coccidiostat</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35820</chebiId>
+<chebiAsciiName>antiprotozoal drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35841</chebiId>
+<chebiAsciiName>uricosuric drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36335</chebiId>
+<chebiAsciiName>trypanocidal drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36413</chebiId>
+<chebiAsciiName>anabolic agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37845</chebiId>
+<chebiAsciiName>growth hormone</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38231</chebiId>
+<chebiAsciiName>phytotoxin</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38870</chebiId>
+<chebiAsciiName>inhalation anaesthetic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38877</chebiId>
+<chebiAsciiName>intravenous anaesthetic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38941</chebiId>
+<chebiAsciiName>schistosomicide drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38956</chebiId>
+<chebiAsciiName>ectoparasiticide</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:48425</chebiId>
+<chebiAsciiName>topical anaesthetic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:49167</chebiId>
+<chebiAsciiName>anti-asthmatic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:49324</chebiId>
+<chebiAsciiName>female contraceptive drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:49325</chebiId>
+<chebiAsciiName>oral contraceptive</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:49326</chebiId>
+<chebiAsciiName>synthetic oral contraceptive</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50112</chebiId>
+<chebiAsciiName>sex hormone</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50685</chebiId>
+<chebiAsciiName>antitrichomonal drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50745</chebiId>
+<chebiAsciiName>progestogen</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:53784</chebiId>
+<chebiAsciiName>antispasmodic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:60311</chebiId>
+<chebiAsciiName>thyroid hormone</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:61951</chebiId>
+<chebiAsciiName>microtubule-destabilising agent</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64584</chebiId>
+<chebiAsciiName>uremic toxin</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64915</chebiId>
+<chebiAsciiName>antiplasmodial drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:22582</chebiId>
+<chebiAsciiName>antibiotic</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:26672</chebiId>
+<chebiAsciiName>siderophore</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:33231</chebiId>
+<chebiAsciiName>antitubercular drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35522</chebiId>
+<chebiAsciiName>beta-adrenergic agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35530</chebiId>
+<chebiAsciiName>beta-adrenergic antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35569</chebiId>
+<chebiAsciiName>alpha-adrenergic agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35816</chebiId>
+<chebiAsciiName>leprostatic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36044</chebiId>
+<chebiAsciiName>antiviral drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36047</chebiId>
+<chebiAsciiName>antibacterial drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36050</chebiId>
+<chebiAsciiName>antitreponemal drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36051</chebiId>
+<chebiAsciiName>antisyphilitic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37890</chebiId>
+<chebiAsciiName>alpha-adrenergic antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38155</chebiId>
+<chebiAsciiName>phytosiderophore</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38498</chebiId>
+<chebiAsciiName>mitochondrial NADH:ubiquinone reductase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38499</chebiId>
+<chebiAsciiName>mitochondrial cytochrome-bc1 complex inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38500</chebiId>
+<chebiAsciiName>mitochondrial cytochrome-c oxidase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:50268</chebiId>
+<chebiAsciiName>GABA modulator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51452</chebiId>
+<chebiAsciiName>endothelin A receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:55322</chebiId>
+<chebiAsciiName>mu-opioid receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59282</chebiId>
+<chebiAsciiName>kappa-opioid receptor agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59283</chebiId>
+<chebiAsciiName>delta-opioid receptor antagonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64370</chebiId>
+<chebiAsciiName>glutamate transporter activator</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:64912</chebiId>
+<chebiAsciiName>antimycobacterial drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:52425</chebiId>
+<chebiAsciiName>neuraminidase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:53756</chebiId>
+<chebiAsciiName>HIV-1 reverse transcriptase inhibitor</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:26115</chebiId>
+<chebiAsciiName>phytoalexin</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35444</chebiId>
+<chebiAsciiName>antinematodal drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35474</chebiId>
+<chebiAsciiName>anxiolytic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35476</chebiId>
+<chebiAsciiName>antipsychotic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:35477</chebiId>
+<chebiAsciiName>antimanic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36053</chebiId>
+<chebiAsciiName>acaricide drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:37930</chebiId>
+<chebiAsciiName>phenothiazine antipsychotic drug</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:38068</chebiId>
+<chebiAsciiName>antimalarial</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:51577</chebiId>
+<chebiAsciiName>partial prostacyclin agonist</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:59826</chebiId>
+<chebiAsciiName>progestin</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+</return>
+</getLiteEntityResponse>
+</S:Body>
+</S:Envelope>

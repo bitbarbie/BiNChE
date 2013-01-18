@@ -1,0 +1,208 @@
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+<S:Body>
+<getLiteEntityResponse xmlns="http://www.ebi.ac.uk/webservices/chebi">
+<return>
+<ListElement>
+<chebiId>CHEBI:33233</chebiId>
+<chebiAsciiName>fundamental particle</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36340</chebiId>
+<chebiAsciiName>fermion</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36341</chebiId>
+<chebiAsciiName>boson</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36343</chebiId>
+<chebiAsciiName>composite particle</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36347</chebiId>
+<chebiAsciiName>nuclear particle</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:30212</chebiId>
+<chebiAsciiName>photon</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:33252</chebiId>
+<chebiAsciiName>atomic nucleus</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36344</chebiId>
+<chebiAsciiName>hadron</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36338</chebiId>
+<chebiAsciiName>lepton</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36346</chebiId>
+<chebiAsciiName>quark</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:10545</chebiId>
+<chebiAsciiName>electron</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:30214</chebiId>
+<chebiAsciiName>antimuon</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:30225</chebiId>
+<chebiAsciiName>positron</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36339</chebiId>
+<chebiAsciiName>baryon</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36345</chebiId>
+<chebiAsciiName>meson</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36352</chebiId>
+<chebiAsciiName>neutrino</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36355</chebiId>
+<chebiAsciiName>tau lepton</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36356</chebiId>
+<chebiAsciiName>muon</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36366</chebiId>
+<chebiAsciiName>up quark</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36367</chebiId>
+<chebiAsciiName>down quark</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36368</chebiId>
+<chebiAsciiName>strange quark</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36369</chebiId>
+<chebiAsciiName>charm quark</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36370</chebiId>
+<chebiAsciiName>bottom quark</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36371</chebiId>
+<chebiAsciiName>top quark</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:30222</chebiId>
+<chebiAsciiName>neutron</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:33253</chebiId>
+<chebiAsciiName>nucleon</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:30223</chebiId>
+<chebiAsciiName>electron neutrino</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36348</chebiId>
+<chebiAsciiName>pi meson</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36349</chebiId>
+<chebiAsciiName>pi(+) meson</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36350</chebiId>
+<chebiAsciiName>pi(-) meson</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36351</chebiId>
+<chebiAsciiName>pi(0) meson</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36353</chebiId>
+<chebiAsciiName>muon neutrino</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36354</chebiId>
+<chebiAsciiName>tau neutrino</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:36365</chebiId>
+<chebiAsciiName>hyperon</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:15378</chebiId>
+<chebiAsciiName>hydron</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:24636</chebiId>
+<chebiAsciiName>proton</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:29233</chebiId>
+<chebiAsciiName>deuteron</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:29234</chebiId>
+<chebiAsciiName>triton</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:30216</chebiId>
+<chebiAsciiName>alpha-particle</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+<ListElement>
+<chebiId>CHEBI:30220</chebiId>
+<chebiAsciiName>helion</chebiAsciiName>
+<entityStar>3</entityStar>
+</ListElement>
+</return>
+</getLiteEntityResponse>
+</S:Body>
+</S:Envelope>
