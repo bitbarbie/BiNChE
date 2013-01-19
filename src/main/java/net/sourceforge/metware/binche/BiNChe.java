@@ -187,7 +187,6 @@ public class BiNChe {
 	public void loadDesiredElementsForEnrichmentFromFile(String fileName) throws IOException {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream(fileName)));
-                //BufferedReader br = new BufferedReader(new FileReader(new File(fileName)));
 
 		String container = new String();
 		HashSet<String> inputNodes = new HashSet<String>();
