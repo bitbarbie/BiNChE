@@ -28,7 +28,7 @@ public class GUITest {
     @Test
     public void testGUI() {
 
-        new BiNCheExec(new String[] { "-g true" }).process();
+        new BiNCheExec(new String[] { "-g" }).process();
 
         // enter to finish test
         Scanner sc = new Scanner(System.in);
