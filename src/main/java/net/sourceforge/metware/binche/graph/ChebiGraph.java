@@ -99,7 +99,7 @@ public class ChebiGraph {
     }
 
     /**
-     * Creates and populates an undirected sparse multigraph.
+     * Creates and populates an directed sparse multigraph.
      *
      * @param pValueMap the p values and their corresponding ChEBI ids from the enrichment analysis
      * @param ontology  the parsed ontology
