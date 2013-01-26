@@ -31,6 +31,7 @@ import org.apache.log4j.Logger;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -185,9 +186,13 @@ public class BiNChe {
 	}
 
 	public void loadDesiredElementsForEnrichmentFromFile(String fileName) throws IOException {
-
-		BufferedReader br = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream(fileName)));
-
+                      
+		// BufferedReader br = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream(fileName)));
+            String absPath;
+            //absPath = new File(".").getAbsolutePath(); 
+            absPath = "/home/sarah/NetBeansProjects/BiNChE/src/main/resources/BiNGO/data/";
+            BufferedReader br=new BufferedReader(new FileReader(new File(absPath+fileName)));
+                
 		String container = new String();
 		HashSet<String> inputNodes = new HashSet<String>();
 		HashMap<String, Double> inputWeights = new HashMap<String, Double>();
