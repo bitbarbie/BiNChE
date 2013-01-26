@@ -96,7 +96,6 @@ public class BiNCheExec extends CommandLineMain {
     private void runDefault(String inputPath, String outputPath) {
 
         LOGGER.log(Level.INFO, "############ Start ############");
-
         String ontologyFile = getClass().getResource("/BiNGO/data/chebi_clean.obo").getFile();
         String elementsForEnrichFile = inputPath;
 
@@ -113,17 +112,17 @@ public class BiNCheExec extends CommandLineMain {
             LOGGER.log(Level.ERROR, "Error reading file: " + exception.getMessage());
             System.exit(1);
         }
-
+        
         binche.execute();
 
         ChebiGraph chebiGraph =
                 new ChebiGraph(binche.getPValueMap(), binche.getOntology(), binche.getNodes());
+      
+        chebiGraph.writePToFile("/home/sarah/NetBeansProjects/BiNChE_sarah/src/main/resources/BiNGO/data/" + outputPath);
 
-        LOGGER.log(Level.INFO, "Writing out graph ...");
-        SvgWriter writer = new SvgWriter();
-
-        writer.writeSvg(chebiGraph.getVisualisationServer(), outputPath);
-
+        // LOGGER.log(Level.INFO, "Writing out graph ...");     
+        //SvgWriter writer = new SvgWriter();
+        //writer.writeSvg(chebiGraph.getVisualisationServer(), outputPath);
         LOGGER.log(Level.INFO, "############ Stop ############");
     }
 

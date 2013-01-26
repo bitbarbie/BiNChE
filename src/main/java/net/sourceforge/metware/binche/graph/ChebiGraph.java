@@ -389,13 +389,13 @@ public class ChebiGraph {
         try 
         { 
             BufferedWriter bw = new BufferedWriter(new FileWriter(new File(filePath)));
+            bw.write("CHEBI;P-Value\n");
             for(Integer node : pValueMap.keySet()) {
-                bw.write(node+":"+pValueMap.get(node));
+                bw.write(node+";"+pValueMap.get(node)+"\n");
             }
             bw.close();
         } catch (IOException io){
             System.out.println("file not found");
         }
-        
     }
 }

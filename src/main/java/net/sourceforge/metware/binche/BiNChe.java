@@ -190,7 +190,7 @@ public class BiNChe {
 		// BufferedReader br = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream(fileName)));
             String absPath;
             //absPath = new File(".").getAbsolutePath(); 
-            absPath = "/home/sarah/NetBeansProjects/BiNChE/src/main/resources/BiNGO/data/";
+            absPath = "/home/sarah/NetBeansProjects/BiNChE_sarah/src/main/resources/BiNGO/data/";
             BufferedReader br=new BufferedReader(new FileReader(new File(absPath+fileName)));
                 
 		String container = new String();
