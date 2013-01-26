@@ -38,6 +38,10 @@ import org.apache.commons.collections15.functors.ConstantTransformer;
 import org.apache.log4j.Logger;
 
 import java.awt.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.*;
 import java.util.List;
 
@@ -72,6 +76,8 @@ public class ChebiGraph {
     private Map<Integer, Double> pValueMap;
 
     private Layout<ChebiVertex, ChebiEdge> layout;
+    
+    private HashSet<String> myNodes;
 
     /**
      * Constructs the ChEBI graph.
@@ -82,6 +88,7 @@ public class ChebiGraph {
      */
     public ChebiGraph(Map<Integer, Double> pValueMap, Ontology ontology, HashSet<String> nodes) {
 
+        myNodes = (HashSet<String>) nodes.clone();
         this.ontology = ontology;
         this.pValueMap = pValueMap;
 
@@ -93,7 +100,7 @@ public class ChebiGraph {
             nodesMod.add(chebiId.split(":")[1]);
         }
         nodes = nodesMod;
-
+        
         populateGraph(pValueMap, ontology, nodes);
         //layoutGraph();
     }
@@ -355,7 +362,8 @@ public class ChebiGraph {
 
     public Collection<ChebiEdge> getEdges() {
 //    	Graph<ChebiVertex, ChebiEdge> temp = layout.getGraph();
-//    	return temp.getEdges();
+//    	return temp.getEdges();IOException io){
+        
         return graph.getEdges();
     }
     /**
@@ -372,4 +380,22 @@ public class ChebiGraph {
         return null;
     }
 
+    /**
+     * Creates an output file that includes pairwise Chebi ID and p-value
+     *
+     * @params filePath absolute Path of the output file
+     */
+    public void writePToFile(String filePath) {
+        try 
+        { 
+            BufferedWriter bw = new BufferedWriter(new FileWriter(new File(filePath)));
+            for(Integer node : pValueMap.keySet()) {
+                bw.write(node+":"+pValueMap.get(node));
+            }
+            bw.close();
+        } catch (IOException io){
+            System.out.println("file not found");
+        }
+        
+    }
 }
