@@ -43,7 +43,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
-import java.util.List;
 
 /**
  * Class providing access to a rooted acyclic minimum spanning tree plus visualisation functionality required to write
@@ -52,7 +51,6 @@ import java.util.List;
 public class ChebiGraph {
 
     private static final Logger LOGGER = Logger.getLogger(ChebiGraph.class);
-
     private Graph<ChebiVertex, ChebiEdge> graph;
     private Map<Integer, ChebiVertex> vertexMap;
     private Set<String> edgeSet;
@@ -397,5 +395,31 @@ public class ChebiGraph {
         } catch (IOException io){
             System.out.println("file not found");
         }
+    }
+    
+    public void exportDOTFormat(String filename){
+
+        try {
+            BufferedWriter out = new BufferedWriter(new FileWriter(new File(filename)));
+            String indent = "  ";
+            String connector = " -> ";
+            
+            out.write("digraph G {\n");
+            // all nodes with label
+            for(ChebiVertex v : graph.getVertices()) {
+                out.write(indent + v.getChebiId() + " [ label=\""+ v.getpValue() +"\" ]\n");
+            }
+            // alle edges
+           for(ChebiEdge e : graph.getEdges()) {
+               String[] splits =  e.getId().split("-");
+               out.write(indent + splits[0] + connector + splits[1] +" [ ]\n");
+           }
+           out.write("}");
+            out.close();
+        }
+        catch(IOException ex) {
+            System.out.println("file not found");
+        }
+     
     }
 }
