@@ -59,6 +59,7 @@ public abstract class CommandLineMain extends ArrayList<Option> {
             cmdLine = parser.parse(options, args);
         } catch (ParseException ex) {
             logger.error("There was a problem parsing command line options: " + ex.getMessage());
+            System.out.println(ex.getMessage());
         }
 
         if (cmdLine.hasOption('h') || cmdLine.hasOption("help")) {

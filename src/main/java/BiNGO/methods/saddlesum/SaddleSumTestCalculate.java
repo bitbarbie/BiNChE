@@ -320,9 +320,9 @@ public class SaddleSumTestCalculate extends AbstractCalculateTestTask implements
             }
 
         }
-        for (Object id : significanceTestMap.keySet()) {
-            System.out.println("ID:" + id + " p-value: " + significanceTestMap.get(id));
-        }
+//        for (Object id : significanceTestMap.keySet()) {
+//            System.out.println("ID:" + id + " p-value: " + significanceTestMap.get(id));
+//        }
     }
 
     //public Map<Integer, Double> getPValueMap() {

@@ -98,7 +98,7 @@ public class BiNGOAnnotationFlatFileReader {
                 reader.read();
                 File outputDir = new File("bincheOutput/");
                 if (!outputDir.exists()) {
-                    System.out.println("-----Creating directory " +outputDir +"-----");
+  //                  System.out.println("-----Creating directory " +outputDir +"-----");
                     outputDir.mkdir();
                 }
                 File orphansFile =  new File(outputDir + "/" + filename.substring(filename.indexOf("ontology"))+".orphans.txt");

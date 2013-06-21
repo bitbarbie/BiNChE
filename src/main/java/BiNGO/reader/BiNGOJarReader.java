@@ -71,7 +71,7 @@ public class BiNGOJarReader {
     } // ctor
 //-----------------------------------------------------------------------------------
     public int read() throws IOException {
-        System.out.println("-- reading " + filename);
+//       System.out.println("-- reading " + filename);
         char[] cBuffer = new char[1024];
         int bytesRead;
         while ((bytesRead = reader.read(cBuffer, 0, 1024)) != -1) {

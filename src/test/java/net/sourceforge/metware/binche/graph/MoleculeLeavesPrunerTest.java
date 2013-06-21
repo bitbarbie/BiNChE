@@ -43,22 +43,22 @@ public class MoleculeLeavesPrunerTest {
      */
     @Test
     public void testPrune() {
-        System.out.println("prune");
+ //       System.out.println("prune");
 
         String ontologyFile = getClass().getClassLoader().getResource("chebi_clean.obo").getFile();
         String elementsForEnrichFile = "/enrich_set_flavonoids.txt";
 
-        System.out.println("Setting default parameters ...");
+ //       System.out.println("Setting default parameters ...");
         BingoParameters parametersChEBIBin = ParameterFactory.makeParametersForChEBIBinomialOverRep(ontologyFile);
 
         BiNChe binche = new BiNChe();
         binche.setParameters(parametersChEBIBin);
 
-        System.out.println("Reading input file ...");
+ //       System.out.println("Reading input file ...");
         try {
             binche.loadDesiredElementsForEnrichmentFromFile(elementsForEnrichFile);
         } catch (IOException exception) {
-            System.out.println("Error reading file: " + exception.getMessage());
+ //          System.out.println("Error reading file: " + exception.getMessage());
             System.exit(1);
         }
 
@@ -68,9 +68,9 @@ public class MoleculeLeavesPrunerTest {
                 new ChebiGraph(binche.getPValueMap(), binche.getOntology(), binche.getNodes());
         MoleculeLeavesPruner instance = new MoleculeLeavesPruner();
         int originalVertices = chebiGraph.getVertexCount();
-        System.out.println("Number of nodes before prunning : "+originalVertices);
+ //       System.out.println("Number of nodes before prunning : "+originalVertices);
 
-        System.out.println("Writing out graph ...");
+ //       System.out.println("Writing out graph ...");
         SvgWriter writer = new SvgWriter();
 
         writer.writeSvg(chebiGraph.getVisualisationServer(), "/tmp/beforePrune.svg");
@@ -81,7 +81,7 @@ public class MoleculeLeavesPrunerTest {
         writer2.writeSvg(chebiGraph.getVisualisationServer(), "/tmp/afterPrune.svg");
         int finalVertices = chebiGraph.getVertexCount();
         
-        System.out.println("Final vertices : " + (finalVertices));
+ //       System.out.println("Final vertices : " + (finalVertices));
 
     }
 }

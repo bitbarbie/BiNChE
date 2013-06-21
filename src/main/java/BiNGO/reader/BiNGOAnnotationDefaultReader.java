@@ -184,7 +184,7 @@ public class BiNGOAnnotationDefaultReader {
                     consistency = true;
                 } else {
                     orphans.add(id2);
-                    System.out.println("orphan GO category: " + id2);
+ //                   System.out.println("orphan GO category: " + id2);
                     orphansFound = true;
                 }
             }    

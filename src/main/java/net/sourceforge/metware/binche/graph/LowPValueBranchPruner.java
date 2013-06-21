@@ -49,7 +49,7 @@ public class LowPValueBranchPruner implements ChEBIGraphPruner {
     @Override
     public void prune(ChebiGraph graph) {
         ChebiVertex root = graph.getRoot();
-        System.out.println("Root : "+root.getChebiName());
+//        System.out.println("Root : "+root.getChebiName());
         if(root==null)
             return;
         

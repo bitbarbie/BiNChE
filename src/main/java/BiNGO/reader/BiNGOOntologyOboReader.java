@@ -240,7 +240,7 @@ public class BiNGOOntologyOboReader {
                     HashSet<OntologyTerm> o2Ancestors = getAllAncestors(new HashSet<OntologyTerm>(),o2);
                     for(OntologyTerm o3: o2Ancestors){
                        if(ancestors.contains(o3)){
-                           System.out.println("removed "+o3.getName());
+//                          System.out.println("removed "+o3.getName());
                            prunedAncestors.remove(o3);
                        }
                     }
@@ -313,7 +313,7 @@ public class BiNGOOntologyOboReader {
             }
  	    fw.close();
         } catch (IOException e) {
-            System.out.println("IOException: " + e);
+//            System.out.println("IOException: " + e);
         }
     }
 
@@ -424,7 +424,7 @@ public class BiNGOOntologyOboReader {
                     HashSet<OntologyTerm> o2Ancestors = getAllAncestors(new HashSet<OntologyTerm>(),o2);
                     for(OntologyTerm o3: o2Ancestors){
                        if(ancestors.contains(o3)){
-                           System.out.println("removed "+o3.getName());
+ //                          System.out.println("removed "+o3.getName());
                            prunedAncestors.remove(o3);
                        }
                     }

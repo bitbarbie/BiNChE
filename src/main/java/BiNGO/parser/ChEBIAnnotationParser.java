@@ -47,7 +47,7 @@ public class ChEBIAnnotationParser extends AnnotationParser {
      */
     @Override
     public String setCustomAnnotation() {
-    	System.out.println("In ChEBIAnnotationParser.setCustomAnnotation() ");
+//    	System.out.println("In ChEBIAnnotationParser.setCustomAnnotation() ");
 
         String resultString = LOADCORRECT;
 
@@ -85,7 +85,7 @@ public class ChEBIAnnotationParser extends AnnotationParser {
      * @return string string with either loadcorrect or a parsing error.
      */
     private String setCustomAnnotationFromAnnotationFile() {
-    	System.out.println("In ChEBIAnnotationParser.setCustomAnnotationFromAnnotationFile() ");
+ //   	System.out.println("In ChEBIAnnotationParser.setCustomAnnotationFromAnnotationFile() ");
 
         String fileString = params.getAnnotationFile();
         annotation = null;
@@ -126,7 +126,7 @@ public class ChEBIAnnotationParser extends AnnotationParser {
 
     @Override
     public void calculate() {
-    	System.out.println("In ChEBIAnnotationParser.calculate()");
+//    	System.out.println("In ChEBIAnnotationParser.calculate()");
 
         if (!params.isOntology_default()) {
             // always perform full remap for .obo files, allows definition of custom GOSlims
@@ -134,7 +134,7 @@ public class ChEBIAnnotationParser extends AnnotationParser {
                 String loadFullOntologyString = setFullOntology();
                 if (!loadFullOntologyString.equals(LOADCORRECT)) {
                     status = false;
-                    System.out.println("Your full ontology file contains errors " + loadFullOntologyString);
+ //                   System.out.println("Your full ontology file contains errors " + loadFullOntologyString);
                 }
                 if (status == true) {
                     //check for cycles
@@ -148,7 +148,7 @@ public class ChEBIAnnotationParser extends AnnotationParser {
                 // loaded a correct ontology file?
                 if (!loadOntologyString.equals(LOADCORRECT)) {
                     status = false;
-                    System.out.println("Your ontology file contains errors " + loadOntologyString);
+ //                   System.out.println("Your ontology file contains errors " + loadOntologyString);
                 }
                 if (status == true) {
                     //check for cycles
@@ -167,13 +167,13 @@ public class ChEBIAnnotationParser extends AnnotationParser {
 
                         } else {
                             loadAnnotationString = "ERROR: Default annotation not supported in BiNChE";
-                        	System.out.println("ERROR: Default annotation not supported in BiNChE");
+ //                       	System.out.println("ERROR: Default annotation not supported in BiNChE");
                         }
 
                         // loaded a correct annotation file?
                         if (!loadAnnotationString.equals(LOADCORRECT)) {
                             status = false;
-                            System.out.println("Your annotation file contains errors " + loadAnnotationString);
+//                            System.out.println("Your annotation file contains errors " + loadAnnotationString);
                         }
                         // annotation consistent with ontology ?
                         if ((status == true) && (consistency == false)) {
@@ -192,7 +192,7 @@ public class ChEBIAnnotationParser extends AnnotationParser {
                 }
             }
         } else {
-        	System.out.println("ERROR: Cannot use default ontology setting with BiNChe.");
+ //       	System.out.println("ERROR: Cannot use default ontology setting with BiNChe.");
         	
         }
     }
@@ -206,7 +206,7 @@ public class ChEBIAnnotationParser extends AnnotationParser {
      */
     @Override
     public String setCustomOntology() {
-    	System.out.println("In ChEBIAnnotationParser.setCustomOntology()");
+ //   	System.out.println("In ChEBIAnnotationParser.setCustomOntology()");
 
         String fileString = params.getOntologyFile();
         String namespace = params.getNameSpace();
@@ -260,7 +260,7 @@ public class ChEBIAnnotationParser extends AnnotationParser {
      */
     @Override
     public String setFullOntology() {
-    	System.out.println("In ChEBIAnnotationParser.setFullOntology()");
+ //   	System.out.println("In ChEBIAnnotationParser.setFullOntology()");
 
         fullOntology = null;
         synonymHash = null;

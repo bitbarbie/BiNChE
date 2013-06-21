@@ -139,7 +139,7 @@ public class AnnotationParser {
                 String loadFullOntologyString = setFullOntology();
                 if (!loadFullOntologyString.equals(LOADCORRECT)) {
                     status = false;
-                    System.out.println("AnnotationParser: Your full ontology file contains errors " + loadFullOntologyString);
+//                    System.out.println("AnnotationParser: Your full ontology file contains errors " + loadFullOntologyString);
                 }
                 if (status == true) {
                     //check for cycles
@@ -153,7 +153,7 @@ public class AnnotationParser {
                 // loaded a correct ontology file?
                 if (!loadOntologyString.equals(LOADCORRECT)) {
                     status = false;
-                    System.out.println("AnnotationParser: Your ontology file contains errors " + loadOntologyString);
+//                    System.out.println("AnnotationParser: Your ontology file contains errors " + loadOntologyString);
                 }
                 if (status == true) {
                     //check for cycles
@@ -169,7 +169,7 @@ public class AnnotationParser {
                         // loaded a correct annotation file?
                         if (!loadAnnotationString.equals(LOADCORRECT)) {
                             status = false;
-                            System.out.println("AnnotationParser: Your annotation file contains errors " + loadAnnotationString);
+ //                           System.out.println("AnnotationParser: Your annotation file contains errors " + loadAnnotationString);
                         }
                         // annotation consistent with ontology ?
                         if ((status == true) && (consistency == false)) {
@@ -549,7 +549,7 @@ public class AnnotationParser {
             int childNode = new Integer(it.next().toString()).intValue();
             up_go(childNode, childNode, ontology);
         }
-        System.out.println("Ontology check finished") ;
+//       System.out.println("Ontology check finished") ;
     }
 
 
@@ -692,14 +692,14 @@ public class AnnotationParser {
             if (parents[t] == startID) {
                 status = false;
                 Exception e = new Exception();
-                System.out.println("Your ontology file contains a cycle at ID " + startID);
+//               System.out.println("Your ontology file contains a cycle at ID " + startID);
                 LOGGER.log(Level.ERROR, "Your ontology file contains a cycle at ID " + startID + " " + e);
             } else if (!parentsSet.contains(new Integer(parents[t]))) {
                 if (ontology.getTerm(parents[t]) != null) {
                     parentsSet.add(new Integer(parents[t]));
                     up_go(startID, parents[t], ontology);
                 } else {
-                    System.out.println("term not in ontology: " + parents[t]);
+//                    System.out.println("term not in ontology: " + parents[t]);
                 }
             }
         }
