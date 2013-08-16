@@ -143,7 +143,7 @@ public class BiNCheExec extends CommandLineMain {
         SvgWriter writer = new SvgWriter();
 
         writer.writeSvg(chebiGraph.getVisualisationServer(), outputPath);
-
+        System.out.println("Dahin: "+outputPath);
         LOGGER.log(Level.INFO, "############ Stop ############");
     }
 
