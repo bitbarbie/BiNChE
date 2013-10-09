@@ -9,7 +9,9 @@ Without this configuration present, some functionality in the IDE may be limited
     <config-data xmlns="http://www.netbeans.org/ns/maven-config-data/1">
         <configurations>
             <configuration id="TestEvaluation" profiles=""/>
+            <configuration id="loadChebi" profiles=""/>
             <configuration id="runAll" profiles=""/>
+            <configuration id="preProcessObo" profiles=""/>
         </configurations>
     </config-data>
 </project-shared-configuration>

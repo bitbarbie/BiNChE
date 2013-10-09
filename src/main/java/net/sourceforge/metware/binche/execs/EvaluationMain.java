@@ -1,21 +1,7 @@
 /*
- * Copyright (c) 2012, Stephan Beisken. All rights reserved.
- *
- * This file is part of BiNChe.
- *
- * BiNChe is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * BiNChe is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with BiNChe. If not, see <http://www.gnu.org/licenses/>.
+ * adapted from BiNCheExec.java
  */
+
 package net.sourceforge.metware.binche.execs;
 
 import BiNGO.BingoParameters;
@@ -172,7 +158,10 @@ public class EvaluationMain extends CommandLineMain {
         }
 
         //String ontologyFile = getClass().getResource("/BiNGO/data/chebi_clean.obo").getFile();
-        String ontologyFile = binchePrefs.get(BiNChEOntologyPrefs.RoleAndStructOntology.name(), null);
+        
+        //String ontologyFile = binchePrefs.get(BiNChEOntologyPrefs.RoleAndStructOntology.name(), null);
+        String ontologyFile = getClass().getResource("/BiNGO/data/out_test_eclipse.obo").getFile();
+        
         String elementsForEnrichFile = inputPath;
 
         BingoParameters parametersSaddle;

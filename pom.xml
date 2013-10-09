@@ -135,7 +135,19 @@
    	  <groupId>org.bbop</groupId>
    	  <artifactId>OWLTools-Core</artifactId>
    	  <version>0.2.1-SNAPSHOT</version>
-   	  </dependency> 
+   	  </dependency>
+        <dependency>
+            <groupId>org.semanticweb.elk</groupId>
+            <artifactId>elk-owlapi</artifactId>
+            <version>0.3.2</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.owlapi</groupId>
+            <artifactId>owlapi-impl</artifactId>
+            <version>3.4.3</version>
+            <type>jar</type>
+        </dependency>
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
