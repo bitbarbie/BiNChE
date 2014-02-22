@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.Set;
 import java.util.prefs.BackingStoreException;
 import java.util.prefs.Preferences;
@@ -142,7 +143,7 @@ public class EvaluationMain extends CommandLineMain {
 
     private void runDefault(String inputPath, String outputPath) {
 
-        LOGGER.log(Level.INFO, "############ Start ############");
+        //LOGGER.log(Level.INFO, "############ Start ############");
 
         Preferences binchePrefs = Preferences.userNodeForPackage(BiNChe.class);
         try {
@@ -159,9 +160,8 @@ public class EvaluationMain extends CommandLineMain {
 
         //String ontologyFile = getClass().getResource("/BiNGO/data/chebi_clean.obo").getFile();
         
-        //String ontologyFile = binchePrefs.get(BiNChEOntologyPrefs.RoleAndStructOntology.name(), null);
-        String ontologyFile = getClass().getResource("/BiNGO/data/out_test_eclipse.obo").getFile();
-        
+        String ontologyFile = binchePrefs.get(BiNChEOntologyPrefs.StructureOntology.name(), null);
+        //String ontologyFile = getClass().getResource("/BiNGO/data/out_test_eclipse.obo").getFile();
         String elementsForEnrichFile = inputPath;
 
         BingoParameters parametersSaddle;
@@ -188,8 +188,12 @@ public class EvaluationMain extends CommandLineMain {
         binche.execute();
 
                // get ids
-        String[] splits = inputPath.split(":");
-        String chebID =  StringUtils.chomp(splits[1],".tsv");
+        String help =  StringUtils.chomp(inputPath,".tsv");
+        String[] splits = help.split(":");
+        LinkedList<String> chebiID = new LinkedList<String>();
+        for(int i=1;i<splits.length;i++){
+            chebiID.add(splits[i]);
+        }
         // modify folder
         splits = outputPath.split("/");
         outputPath="";
@@ -207,7 +211,7 @@ public class EvaluationMain extends CommandLineMain {
         ColorGradient cG = new ColorGradient(getListOfPValues(binche.getEnrichedNodes()), 0.05);
         
         
-        writer.writeEvaluationDot(chebiGraph, cG , outputPath+".dot", chebID);
+        writer.writeEvaluationDot(chebiGraph, cG , outputPath+".dot", chebiID);
     }
 
     /**
@@ -270,11 +274,17 @@ public class EvaluationMain extends CommandLineMain {
             LOGGER.error("Problems loading preferences", e);
             return;
         }
-
-        //String ontologyFile = getClass().getResource("/BiNGO/data/chebi_clean.obo").getFile();
-        String ontologyFile = binchePrefs.get(BiNChEOntologyPrefs.RoleAndStructOntology.name(), null);
+System.out.println("hier");
+        //String ontologyFile = getClass().getResource("/home/princess/NetBeansData/rawData/obo/out_test_20140219.obo").getFile();
+        String ontologyFile = binchePrefs.get(BiNChEOntologyPrefs.StructureOntology.name(), null);
+        //String ontologyFile = "home/princess/NetBeansData/rawData/obo/test_out_20140219.obo";
+System.out.println("Hier: "+ontologyFile);
+        
         String elementsForEnrichFile = inputPath;
 
+                System.out.println("Ontology FIle "+ontologyFile);
+
+        
         BingoParameters parametersSaddle;
         LOGGER.log(Level.INFO, "Setting hypergeometric parameters ...");
         parametersSaddle = getHyperParameters(ontologyFile);
@@ -293,8 +303,12 @@ public class EvaluationMain extends CommandLineMain {
         binche.execute();
 
                // get ids
-        String[] splits = inputPath.split(":");
-        String chebID =  StringUtils.chomp(splits[1],".tsv");
+        String help =  StringUtils.chomp(inputPath,".tsv");
+        String[] splits = help.split(":");
+        LinkedList<String> chebiID = new LinkedList<String>();
+        for(int i=1;i<splits.length;i++){
+            chebiID.add(splits[i]);
+        }
         // modify folder
         splits = outputPath.split("/");
         outputPath="";
@@ -311,7 +325,7 @@ public class EvaluationMain extends CommandLineMain {
         DotWriter writer = new DotWriter();
         ColorGradient cG = new ColorGradient(getListOfPValues(binche.getEnrichedNodes()), 0.05);
         
-        writer.writeEvaluationDot(chebiGraph, cG , outputPath+".dot", chebID);
+        writer.writeEvaluationDot(chebiGraph, cG , outputPath+".dot", chebiID);
     }
        
        

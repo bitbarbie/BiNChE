@@ -11,7 +11,9 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.Collection;
+import java.util.LinkedList;
 import java.util.Map;
 import org.apache.log4j.Logger;
 
@@ -30,13 +32,15 @@ public class DotWriter {
      * @param filenameOut
      * @param correctID 
      */
-    public void writeEvaluationDot(ChebiGraph graph, ColorGradient colorGrad, String filenameOut, String correctID){    
+    public void writeEvaluationDot(ChebiGraph graph, ColorGradient colorGrad, String filenameOut, LinkedList<String> correctID){    
 
         try {
             BufferedWriter out = new BufferedWriter(new FileWriter(new File(filenameOut)));
       
             String indent = "  ";
             String connector = " -> ";
+            DecimalFormat form = new DecimalFormat("0.###E0");
+
             
             out.write("digraph G {\n");
             // all nodes with label
@@ -44,7 +48,7 @@ public class DotWriter {
                 for(ChebiVertex v : graph.getVertices()) {
                     String ID = v.getChebiId();
                     String box ="";
-                    if(ID.equals(correctID)){
+                    if(correctID.contains(ID)){
                         box=" shape=box ";
                     }
                     Double pval = v.getpValue();
@@ -54,7 +58,8 @@ public class DotWriter {
                     {
                         saturation= col.getAlpha()/255.0; 
                     }
-                    out.write(indent + ID + " [ label=\""+ ID +"\\n"+ pval+"\""  
+                    
+                    out.write(indent + ID + " [ label=\""+ v.getChebiName() +"\\npvalue="+ ((pval==0.0) ? 0 : (pval==1.0) ? 1.0 : form.format(pval)) +"\""  
                                 + box 
                                 + " style=filled fillcolor=" 
                                 // invert saturation value alpha and scale in [0,1]
@@ -66,11 +71,11 @@ public class DotWriter {
                 for(ChebiVertex v : graph.getVertices()) {
                     String ID = v.getChebiId();
                     String box ="";
-                    if(ID.equals(correctID)){
+                    if(correctID.contains(ID)){
                         box=" shape=box ";
                     }
                     Double pval = v.getpValue();
-                    out.write(indent + ID + " [ label=\""+ ID +"\\n"+ pval+"\""  
+                    out.write(indent + ID + " [ label=\""+v.getChebiName()+"\\npvalue="+ ((pval==0.0) ? 0 : (pval==1.0) ? 1.0 : form.format(pval))+"\""  
                                 + box 
                                 + " style=filled fillcolor=" 
                                 + getFillcolor(pval)

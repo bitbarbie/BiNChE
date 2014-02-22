@@ -42,7 +42,7 @@ class DefaultPreferenceSetter {
 
     public DefaultPreferenceSetter() throws BackingStoreException {
         prefsBiNChE = Preferences.userNodeForPackage(BiNChe.class);
-
+System.out.println("Hier home: "+bincheHome);
         prefsBiNChE.put(BiNChEOntologyPrefs.StructureOntology.name(), bincheHome + "chebiInferred_chemEnt.obo");
         prefsBiNChE.put(BiNChEOntologyPrefs.RoleOntology.name(), bincheHome + "chebiInferred_roles.obo");
         prefsBiNChE.put(BiNChEOntologyPrefs.RoleAndStructOntology.name(), bincheHome + "chebiInferred_chemEnt_roles.obo");
