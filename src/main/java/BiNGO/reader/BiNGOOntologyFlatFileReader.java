@@ -57,6 +57,11 @@ import java.util.HashMap;
 import java.util.List;
 //-------------------------------------------------------------------------
 
+/**
+ * Part of the original BiNGO Source Code. Adapted from : OntologyFlatFileReader.java in Cytoscape
+ *
+ * @author Steven Maere
+ */
 public class BiNGOOntologyFlatFileReader {
     Ontology ontology;
     String curator = "unknown";

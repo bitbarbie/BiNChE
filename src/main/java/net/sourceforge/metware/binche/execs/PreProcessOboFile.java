@@ -17,22 +17,36 @@ import uk.ac.manchester.cs.owl.owlapi.OWLClassImpl;
 import uk.ac.manchester.cs.owl.owlapi.OWLObjectSomeValuesFromImpl;
 
 /**
- * Pre-process an OBO file for use in the ontology enrichment tool
+ * Pre-process an OBO file for use in the ontology enrichment tool.</p>
  * 
- * Execute with Parameters:
- * 1) obo file SOURCE
- * 2) obo file OUTPUT
- * 3) boolean carryDownInferredRelations
- * 4) boolean writeSeparateAnnotationFile
- * 5) root ontology id(s) to extract subtrees from (semicolon-separated)
- * 6) metadata properties to carry over to new ontology (semicolon-separated)
- * 7) [optional] relationship(s) to infer over (semicolon-separated) for annotation file and inherited inferences
+ * Execute with Parameters:</br>
+ * 1) obo file SOURCE</br>
+ * 2) obo file OUTPUT</br>
+ * 3) boolean carryDownInferredRelations</br>
+ * 4) boolean writeSeparateAnnotationFile</br>
+ * 5) root ontology id(s) to extract subtrees from (semicolon-separated)</br>
+ * 6) metadata properties to carry over to new ontology (semicolon-separated)</br>
+ * 7) [optional] relationship(s) to infer over (semicolon-separated) for annotation file and inherited inferences</br>
  * 
- * @author tudose, hastings
+ * @author Ilinca Tudose
+ * @author Janna Hastings
  *
  */
 public class PreProcessOboFile {
 
+    /**
+     * Main to run the task of pre-processing the obo file, with the following parameters:
+     *
+     * 1) obo file source
+     * 2) obo file output
+     * 3) boolean carryDownInferredRelations
+     * 4) boolean writeSeparateAnnotationFile
+     * 5) root ontology id(s) to extract subtrees from (semicolon-separated)
+     * 6) metadata properties to carry over to new ontology (semicolon-separated)
+     * 7) (optional) relationship(s) to carry inferences with and/or create separate annotations with (semicolon-separated)
+     *
+     * @param args
+     */
 	public static void main(String args[]){
 
 		if (args.length < 6 ) {
@@ -89,40 +103,38 @@ public class PreProcessOboFile {
 
 	}
 
-        /**
-         * 
-         * @param ontologyIRI path to the ontology file
-         * @param newOntIRI obo file OUTPUT
-         * @param carryDownInferredRelations
-         * @param writeSeparateAnnotationFile true if a separate annotation file needs to be written.
-         * @param chebiIDsForSubtrees
-         * @param metadatas
-         * @param propertiesToInferUpon 
-         */
+    /**
+     * This method loads an ontology, runs the reasoner and builds a new ontology with:
+     * 	- all subclassOf relations
+     * 	- for each class inherited properties are "re-assigned" directly
+     * 	- for the properties specified in the list, the class of the object property is followed up
+     * 	- all relations are restricted to classes belonging to the subtrees of the classes passed as
+     *        parameters in chebiIDsForSubtrees; any other class is simply ignored
+     *
+     * It aims to address the following task: compute the transitive closure of the has-role (and other,
+     * but mostly has-role) relationship over the is-a relationship.
+     *
+     * EXAMPLE
+     * Input:
+     * 	Amphetamines hasRole CNSStimulant
+     * 	Mephedrome isA Amphetamines
+     * Result:
+     *  Amphetamines hasRole CNSStimulant
+     * 	Mephedrome isA Amphetamines
+     *	Mephedrome hasRole CNSStimulant
+     *
+     * @param ontologyIRI path to the ontology file
+     * @param newOntIRI obo file OUTPUT
+     * @param carryDownInferredRelations
+     * @param writeSeparateAnnotationFile true if a separate annotation file needs to be written.
+     * @param chebiIDsForSubtrees
+     * @param metadatas
+     * @param propertiesToInferUpon
+     */
 	public void getTransitiveClosure(String ontologyIRI, String newOntIRI,  
 			boolean carryDownInferredRelations, boolean writeSeparateAnnotationFile, 
 			List<String> chebiIDsForSubtrees,  
-			List<String> metadatas, List<String> propertiesToInferUpon){
-		/**
-		 * This method loads an ontology, runs the reasoner and builds a new ontology with:
-		 * 	- all subclassOf relations
-		 * 	- for each class inherited properties are "re-assigned" directly
-		 * 	- for the properties specified in the list, the class of the object property is followed up
-		 * 	- all relations are restricted to classes belonging to the subtrees of the classes passed as 
-                 *        parameters in chebiIDsForSubtrees; any other class is simply ignored
-		 * Janna's description of the task: "compute the transitive closure of the has-role (and other, 
-                 * but mostly has-role) relationship over the is-a relationship." 
-		 * 
-		 *EXAMPLE
-		 *Input: 
-		 * 	Amphetamines hasRole CNSStimulant
-		 * 	Mephedrome isA Amphetamines
-		 *Result:
-		 *  Amphetamines hasRole CNSStimulant
-		 * 	Mephedrome isA Amphetamines
-		 *	Mephedrome hasRole CNSStimulant
-		 * 
-		 */
+			List<String> metadatas, List<String> propertiesToInferUpon) {
 
 		// Output file for ANNOTATIONS
 		BufferedWriter cout = null; 
@@ -259,7 +271,7 @@ public class PreProcessOboFile {
 		}
 	}	
 
-	public void postProcess(String oboFile, String outputFile){
+	private void postProcess(String oboFile, String outputFile){
 		/**
 		 * We need to change some things in the file we created with getTransitiveClosure(...)
 		 * - IDs are changed into CHEBI_123 and don't match the original notation any more (CHEBI:123)
@@ -282,7 +294,7 @@ public class PreProcessOboFile {
 		}
 	}
 
-	public void writeToAnnotationFile(BufferedWriter cout, OWLClass subjectClass, OWLObjectSomeValuesFrom axiom){
+	private void writeToAnnotationFile(BufferedWriter cout, OWLClass subjectClass, OWLObjectSomeValuesFrom axiom){
 		try{
 			Set<OWLClass> object = axiom.getClassesInSignature();
 			if (object.size() > 1) {
@@ -301,7 +313,7 @@ public class PreProcessOboFile {
 		}
 	}
 
-    public String getAnnotationNameForOntology(String newOntIRI) {
+    private String getAnnotationNameForOntology(String newOntIRI) {
         return newOntIRI.replace(".obo", ".txt");
     }
 

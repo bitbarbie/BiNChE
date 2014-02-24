@@ -16,7 +16,6 @@ import net.sourceforge.metware.binche.loader.BiNChEOntologyPrefs;
 import net.sourceforge.metware.binche.loader.OfficialChEBIOboLoader;
 import org.apache.log4j.Logger;
 import org.junit.*;
-import static org.junit.Assert.*;
 
 /**
  *
@@ -88,7 +87,7 @@ public class LinearBranchCollapserPrunerTest {
         ChebiGraph chebiGraph =
                 new ChebiGraph(binche.getEnrichedNodes(), binche.getOntology(), binche.getInputNodes());
 
-        List<ChEBIGraphPruner> pruners = Arrays.asList(new MoleculeLeavesPruner(), new LowPValueBranchPruner(0.05)
+        List<ChEBIGraphPruner> pruners = Arrays.asList(new MoleculeLeavesPruner(), new HighPValueBranchPruner(0.05)
                 , new LinearBranchCollapserPruner(), new RootChildrenPruner(3, true), new ZeroDegreeVertexPruner());
         int originalVertices = chebiGraph.getVertexCount();
         System.out.println("Number of nodes before prunning : " + originalVertices);

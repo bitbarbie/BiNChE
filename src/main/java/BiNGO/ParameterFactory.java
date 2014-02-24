@@ -30,18 +30,22 @@ import org.apache.log4j.Logger;
 import BiNGO.methods.BingoAlgorithm;
 
 /**
+ * Convenience class which contains preset BiNGO parameters settings for common scenarios used.
+ *
  * @name    ParameterFactory
  * @date    2012.10.19
- * @version $Rev$ : Last Changed $Date$
- * @author  pmoreno
- * @author  $Author$ (this version)
- * @brief   ...class description...
- *
+ * @author  Pablo Moreno
  */
 public class ParameterFactory {
 
     private static final Logger LOGGER = Logger.getLogger( ParameterFactory.class );
 
+    /**
+     * Provides parameters settings for the ChEBI Binomial over representation enrichment analysis.
+     *
+     * @param ontologyFile the path to the obo ontology file to be used.
+     * @return the {@link BingoParameters} objects containing parameters for this type of analysis.
+     */
     public static BingoParameters makeParametersForChEBIBinomialOverRep(String ontologyFile) {
         BingoParameters parametersBinomial = new BingoParameters();
 
@@ -59,7 +63,14 @@ public class ParameterFactory {
 
         return parametersBinomial;
     }
-    
+
+    /**
+     * Provides parameters settings for the ChEBI weighted enrichment analysis. This type of analysis uses the SaddleSum
+     * algorithm to include the weights into the enrichment calculation.
+     *
+     * @param ontologyFile the path to the obo ontology file to be used.
+     * @return the {@link BingoParameters} objects containing parameters for this type of analysis.
+     */
     public static BingoParameters makeParametersForWeightedAnalysis(String ontologyFile) {
 
 		BingoParameters parametersSaddle = new BingoParameters();
@@ -79,6 +90,13 @@ public class ParameterFactory {
 		return parametersSaddle;
 	}
 
+    /**
+     * Provides parameters settings for the ChEBI fragment-based enrichment analysis. It is a weighted analysis where
+     * the ontology is limited to the. Apparently this is not used, as it is the same as the weighted analysis.
+     *
+     * @param ontologyFile
+     * @return
+     *
     public static BingoParameters makeParametersForChEBISaddleSum(String ontologyFile) {
 
     	BingoParameters parametersSaddle = new BingoParameters();
@@ -96,6 +114,6 @@ public class ParameterFactory {
     	parametersSaddle.setSelectedNodes(null);
 
     	return parametersSaddle;
-    }
+    }*/
    
 }

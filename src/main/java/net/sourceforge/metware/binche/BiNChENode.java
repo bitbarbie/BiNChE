@@ -25,13 +25,12 @@ package net.sourceforge.metware.binche;
 import org.apache.log4j.Logger;
 
 /**
+ * This class is used to represent each of the nodes produced by the enrichment analysis, containing p-value and other
+ * indicators of the level of enrichment on the node.
+ *
  * @name    BiNChENode
  * @date    2013.02.07
- * @version $Rev$ : Last Changed $Date$
- * @author  pmoreno
- * @author  $Author$ (this version)
- * @brief   ...class description...
- *
+ * @author  Pablo Moreno
  */
 public class BiNChENode {
 
@@ -44,7 +43,8 @@ public class BiNChENode {
     private Double corrPValue;
 
     /**
-     * Get the value of corrPValue. This value can be null.
+     * Get the value of corrected P-Value (after multiple hypothesis correction). This value can be null if no
+     * correction was used.
      *
      * @return the value of corrPValue
      */
@@ -55,6 +55,18 @@ public class BiNChENode {
 
     private String identifier;
 
+    /**
+     * Constructor for a ChEBI Node, which is the main object in the graph produced as result.
+     *
+     * @param pValue The p-value for the enrichment on this node, before any FDR correction.
+     * @param corrPValue The p-value of the enrichment on this node, after FDR correction.
+     * @param bigX The number of total entities on the given sample.
+     * @param bigN The number of total entities on the complete population.
+     * @param smallX The number of entities of the sample that fall in (or are children of) this node of the ontology.
+     * @param smallN The number of entities of the complete population that fall in (or are children of) this node of
+     *               the ontology.
+     * @param identifier The identitifier for this node of the ontology.
+     */
     public BiNChENode(Double pValue, Double corrPValue, Integer bigX, Integer bigN, Integer smallX, Integer smallN, String identifier) {
         this.pValue = pValue;
         this.corrPValue = corrPValue;
@@ -101,6 +113,11 @@ public class BiNChENode {
         this.pValue = pValue;
     }
 
+    /**
+     * Gets the ChEBI Identifier for this node.
+     *
+     * @return ChEBI Identifier as an String.
+     */
     public String getIdentifier() {
         return identifier;
     }

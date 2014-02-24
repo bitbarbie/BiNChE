@@ -54,14 +54,11 @@ import java.util.Set;
 
 
 /**
- * ************************************************************
- * AnnotationParser.java
- * --------------------------
+ * Part of the original BiNGO Source code.
  * <p/>
  * Steven Maere (c) April 2005
  * <p/>
  * Class that parses the annotation files in function of the chosen ontology.
- * *************************************************************
  */
 
 

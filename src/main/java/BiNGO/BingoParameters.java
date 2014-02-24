@@ -13,10 +13,11 @@ import java.util.*;
 import java.util.jar.JarFile;
 
 /**
- * Created by
- * User: risserlin
- * Date: Jun 12, 2006
- * Time: 8:30:34 AM
+ * Part of the original BiNGO Source code.</p>
+ * Created by</br>
+ * User: risserlin</br>
+ * Date: Jun 12, 2006</br>
+ * Time: 8:30:34 AM</br>
  */
 public class BingoParameters {
 

@@ -18,28 +18,47 @@
  */
 package net.sourceforge.metware.binche.graph;
 
+
+/**
+ * Edge of the {@link ChebiGraph}, which is used to store the result of the enrichment analysis
+ * in a graph based structure.
+ *
+ * @author Stephan Beisken
+ * @author Pablo Moreno
+ */
 public class ChebiEdge {
 
     private String id;
-    private double pValue;
-
+    /**
+     * @deprecated use {@link #ChebiEdge(String,String)} instead.
+     * @param id
+     * @param pValue
+     */
     public ChebiEdge(String id, double pValue) {
-
         this.id = id;
-        this.pValue = pValue;
     }
 
-    public String getId() {
+    /**
+     * Initializes the edge with an id produced by concatenating the two nodes id in the given order.
+     *
+     * @param previousID of the from or previous node.
+     * @param nextID of the to or next node.
+     */
+    public ChebiEdge(String previousID, String nextID) {
+        this.id = previousID+"-"+nextID;
+    }
 
+    /**
+     * Gets the ID of the edge.
+     *
+     * @return the id of the node.
+     */
+    public String getId() {
         return id;
     }
 
-    public String toString() {
-
-        return pValue == 0 ? "" : String.format("%3.2e", pValue);
-    }
-
-    @Override public boolean equals(Object obj) {
+    @Override
+    public boolean equals(Object obj) {
 
         if (obj == null || !(obj instanceof ChebiEdge)) return false;
 

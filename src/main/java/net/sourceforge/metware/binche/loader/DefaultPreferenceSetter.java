@@ -25,29 +25,34 @@ import net.sourceforge.metware.binche.execs.PreProcessOboFile;
 import org.apache.log4j.Logger;
 
 /**
+ * Handles the interaction with the Preferences file (Java Preferences API), allowing to set/get
+ * the default preferences.
+ *
  * @name DefaultPreferenceSetter
  * @date 2013.02.11
- * @version $Rev$ : Last Changed $Date$
  * @author pmoreno
- * @author $Author$ (this version)
  * @brief Sets default values for the BiNChE file location preferences.
- *
  */
 class DefaultPreferenceSetter {
 
     private static final Logger LOGGER = Logger.getLogger(DefaultPreferenceSetter.class);
     private Preferences prefsBiNChE;
     private final String bincheHome = System.getProperty("user.home") + File.separator + ".binche" + File.separator;
-    
 
+
+    /**
+     * Sets default preferences for paths of the different ontology and annotation files. All the file paths are set
+     * within the .binche folder in the user's home directory.
+     *
+     * @throws BackingStoreException
+     */
     public DefaultPreferenceSetter() throws BackingStoreException {
+
         prefsBiNChE = Preferences.userNodeForPackage(BiNChe.class);
-System.out.println("Hier home: "+bincheHome);
         prefsBiNChE.put(BiNChEOntologyPrefs.StructureOntology.name(), bincheHome + "chebiInferred_chemEnt.obo");
         prefsBiNChE.put(BiNChEOntologyPrefs.RoleOntology.name(), bincheHome + "chebiInferred_roles.obo");
         prefsBiNChE.put(BiNChEOntologyPrefs.RoleAndStructOntology.name(), bincheHome + "chebiInferred_chemEnt_roles.obo");
-        PreProcessOboFile ppof = new PreProcessOboFile();
-        prefsBiNChE.put(BiNChEOntologyPrefs.RoleAnnot.name(), ppof.getAnnotationNameForOntology(bincheHome + "chebiInferred_roles.obo"));
+        prefsBiNChE.put(BiNChEOntologyPrefs.RoleAnnot.name(), bincheHome + "chebiInferred_roles.txt");
 
         File theDir = new File(bincheHome);
 
@@ -63,6 +68,11 @@ System.out.println("Hier home: "+bincheHome);
         prefsBiNChE.flush();
     }
 
+    /**
+     * Retrieves the default preferences for BiNChE.
+     *
+     * @return
+     */
     Preferences getDefaultSetPrefs() {
         return prefsBiNChE;
     }

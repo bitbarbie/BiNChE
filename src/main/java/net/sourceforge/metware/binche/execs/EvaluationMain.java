@@ -274,17 +274,12 @@ public class EvaluationMain extends CommandLineMain {
             LOGGER.error("Problems loading preferences", e);
             return;
         }
-System.out.println("hier");
         //String ontologyFile = getClass().getResource("/home/princess/NetBeansData/rawData/obo/out_test_20140219.obo").getFile();
         String ontologyFile = binchePrefs.get(BiNChEOntologyPrefs.StructureOntology.name(), null);
-        //String ontologyFile = "home/princess/NetBeansData/rawData/obo/test_out_20140219.obo";
-System.out.println("Hier: "+ontologyFile);
+        //String ontologyFile = "/home/princess/NetBeansData/rawData/obo/out_test_20140219.obo";
         
         String elementsForEnrichFile = inputPath;
-
-                System.out.println("Ontology FIle "+ontologyFile);
-
-        
+      
         BingoParameters parametersSaddle;
         LOGGER.log(Level.INFO, "Setting hypergeometric parameters ...");
         parametersSaddle = getHyperParameters(ontologyFile);

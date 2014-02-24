@@ -52,6 +52,11 @@ import java.util.HashSet;
 import java.util.Set;
 //-------------------------------------------------------------------------
 
+/**
+ * Part of the original BiNGO Source Code.
+ *
+ * @author Steven Maere
+ */
 public class BiNGOOntologyOboReader {
     Ontology ontology;
     Ontology fullOntology;

@@ -80,6 +80,22 @@
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9.1</version>
+                <configuration>
+                    <show>public</show>
+                    <excludePackageNames>BiNGO.interfaces:BiNGO.BingoParameters:BiNGO.methods:
+                        BiNGO.methods.binomial:BiNGO.methods.hypergeometric:
+                        BiNGO.parser.AnnotationParser:BiNGO.reader.BiNGOAnnotationDefaultReader:
+                        BiNGO.reader.BiNGOAnnotationDefaultReader:BiNGO.reader.BiNGOAnnotationFlatFileReader:
+                        BiNGO.reader.BiNGOConsortiumAnnotationReader:BiNGO.reader.BiNGOJarReader:
+                        BiNGO.reader.BiNGOOntologyDefaultReader:BiNGO.reader.BiNGOOntologyFlatFileReader:
+                        BiNGO.reader.BiNGOOntologyOboReader
+                    </excludePackageNames>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 

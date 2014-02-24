@@ -42,6 +42,7 @@ import java.util.Set;
  * @param <ChebiVertex>
  * @param <ChebiEdge>
  * @author Tom Nelson - tomnelson@dev.java.net
+ * @author Stephan Beisken (adapted for ChEBI ontology).
  */
 @SuppressWarnings("unchecked")
 public class SpanningForest<ChebiVertex, ChebiEdge> {

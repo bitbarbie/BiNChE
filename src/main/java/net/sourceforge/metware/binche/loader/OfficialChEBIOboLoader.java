@@ -35,20 +35,26 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 
 /**
+ * This class downloads and processes the ChEBI OBO file, to maximize its utility for the enrichment analysis. The
+ * main processing class is {@link PreProcessOboFile}, which calls the reasoner to infer to assertions.
+ *
  * @name    OfficialChEBIOboLoader
  * @date    2013.02.11
- * @version $Rev$ : Last Changed $Date$
- * @author  pmoreno
- * @author  $Author$ (this version)
- * @brief   ...class description...
- *
+ * @author  Pablo Moreno
+ * @brief   Handles the download and processing of the official ChEBI ontology OBO file.
  */
 public class OfficialChEBIOboLoader {
 
     private static final Logger LOGGER = Logger.getLogger( OfficialChEBIOboLoader.class );
     
     private final String oboURL = "ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo";
-    
+
+    /**
+     * The constructor loads the OBO file from the ChEBI ftp and executes the reasoning steps.
+     *
+     * @throws IOException
+     * @throws BackingStoreException
+     */
     public OfficialChEBIOboLoader() throws IOException, BackingStoreException {
         Preferences binchePrefs = Preferences.userNodeForPackage(BiNChe.class);
         
@@ -59,6 +65,7 @@ public class OfficialChEBIOboLoader {
         PreProcessOboFile ppof = new PreProcessOboFile();
         File tmpFileObo = File.createTempFile("BiNChE", ".obo");
         FileUtils.copyURLToFile(new URL(oboURL), tmpFileObo);
+
         ppof.getTransitiveClosure(tmpFileObo.getAbsolutePath(), binchePrefs.get(BiNChEOntologyPrefs.RoleOntology.name(), null), 
                 false, 
                 true, 
@@ -87,7 +94,14 @@ public class OfficialChEBIOboLoader {
         
         tmpFileObo.delete();
     }
-    
+
+    /**
+     * Main method to run the obo file download and process.
+     *
+     * @param args
+     * @throws BackingStoreException
+     * @throws IOException
+     */
     public static void main(String[] args) throws BackingStoreException, IOException {
         new OfficialChEBIOboLoader();
     }

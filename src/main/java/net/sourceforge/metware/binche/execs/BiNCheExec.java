@@ -37,7 +37,17 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
 /**
- * @author Stephan Beisken
+ * This class handles the command line execution of BiNChE, with or without deployment of the BiNChE graphical interface.
+ *<p>
+ * Arguments are:
+ *   <br>[-g flag, if given, the graphical interface is used]
+ *   <br>-i Path to a file with ChEBI identifiers, to calculate enrichment analysis for.
+ *   <br>-o Output path, the directory where results will be written to.
+ *<p>
+ * Options -i and -o are required if -g is not used. For customizing settings to be used, this file can be replicated and
+ * modified.
+ *
+ * @author Stephan Beisken, Pablo Moreno
  */
 public class BiNCheExec extends CommandLineMain {
 
@@ -148,7 +158,7 @@ public class BiNCheExec extends CommandLineMain {
     }
 
     /**
-     * This should be set through the parameters factory. This should be removed.
+     * TODO This should be set through the parameters factory. This should be removed.
      *
      * @param ontologyFile
      * @return

@@ -46,6 +46,11 @@ import java.util.Set;
 
 //-------------------------------------------------------------------------
 
+/**
+ * Part of the original BiNGO Source Code.
+ *
+ * @author Steven Maere
+ */
 public class BiNGOConsortiumAnnotationReader {
 
     Annotation annotation;

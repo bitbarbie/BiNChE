@@ -59,7 +59,7 @@ public class DotWriter {
                         saturation= col.getAlpha()/255.0; 
                     }
                     
-                    out.write(indent + ID + " [ label=\""+ v.getChebiName() +"\\npvalue="+ ((pval==0.0) ? 0 : (pval==1.0) ? 1.0 : form.format(pval)) +"\""  
+                    out.write(indent + ID + " [ label=\""+ v.getChebiName() +"\\nCHEBI:"+v.getChebiId()+"\\np="+ ((pval==0.0) ? 0 : (pval==1.0) ? 1.0 : form.format(pval)) +"\""  
                                 + box 
                                 + " style=filled fillcolor=" 
                                 // invert saturation value alpha and scale in [0,1]
@@ -75,7 +75,7 @@ public class DotWriter {
                         box=" shape=box ";
                     }
                     Double pval = v.getpValue();
-                    out.write(indent + ID + " [ label=\""+v.getChebiName()+"\\npvalue="+ ((pval==0.0) ? 0 : (pval==1.0) ? 1.0 : form.format(pval))+"\""  
+                    out.write(indent + ID + " [ label=\""+v.getChebiName()+"\\nCHEBI:"+v.getChebiId()+"\\np="+ ((pval==0.0) ? 0 : (pval==1.0) ? 1.0 : form.format(pval))+"\""  
                                 + box 
                                 + " style=filled fillcolor=" 
                                 + getFillcolor(pval)

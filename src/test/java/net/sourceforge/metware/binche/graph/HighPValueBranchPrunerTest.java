@@ -15,15 +15,14 @@ import net.sourceforge.metware.binche.BiNChe;
 import net.sourceforge.metware.binche.loader.BiNChEOntologyPrefs;
 import net.sourceforge.metware.binche.loader.OfficialChEBIOboLoader;
 import org.junit.*;
-import static org.junit.Assert.*;
 
 /**
  *
  * @author pmoreno
  */
-public class LowPValueBranchPrunerTest {
+public class HighPValueBranchPrunerTest {
     
-    public LowPValueBranchPrunerTest() {
+    public HighPValueBranchPrunerTest() {
     }
 
     @BeforeClass
@@ -43,7 +42,7 @@ public class LowPValueBranchPrunerTest {
     }
 
     /**
-     * Test of prune method, of class LowPValueBranchPruner.
+     * Test of prune method, of class HighPValueBranchPruner.
      */
     @Test
     public void testPrune() {
@@ -87,7 +86,7 @@ public class LowPValueBranchPrunerTest {
         ChebiGraph chebiGraph =
                 new ChebiGraph(binche.getEnrichedNodes(), binche.getOntology(), binche.getInputNodes());
 
-        List<ChEBIGraphPruner> pruners = Arrays.asList(new MoleculeLeavesPruner(), new LowPValueBranchPruner(0.05));
+        List<ChEBIGraphPruner> pruners = Arrays.asList(new MoleculeLeavesPruner(), new HighPValueBranchPruner(0.05));
         //MoleculeLeavesPruner instance = new MoleculeLeavesPruner();
         int originalVertices = chebiGraph.getVertexCount();
         System.out.println("Number of nodes before prunning : " + originalVertices);

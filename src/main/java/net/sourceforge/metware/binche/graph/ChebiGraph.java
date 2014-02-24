@@ -43,8 +43,11 @@ import java.util.List;
 import net.sourceforge.metware.binche.BiNChENode;
 
 /**
- * Class providing access to a rooted acyclic minimum spanning tree plus visualisation functionality required to write
+ * Class providing access to a directed graph plus visualisation functionality required to write
  * and display the graph. The graph is tailored to deal with the ChEBI ontology.
+ *
+ * @author Stephan Beisken
+ * @author Pablo Moreno
  */
 public class ChebiGraph {
 
@@ -69,9 +72,7 @@ public class ChebiGraph {
     }
 
     private ColorGradient gradient;
-
     private Ontology ontology;
-
     private Layout<ChebiVertex, ChebiEdge> layout;
 
     /**
@@ -90,7 +91,7 @@ public class ChebiGraph {
     } 
 
     /**
-     * Creates and populates an undirected sparse multigraph.
+     * Creates and populates an directed sparse multigraph.
      * 
      * @param enrichmentNodes all the nodes of the enrichment analysis
      * @param ontology        the parsed ontology
@@ -120,7 +121,7 @@ public class ChebiGraph {
      * Adds a vertex to the vertex map if not already contained and sets its color depending on the estimated p value
      * from the enrichment analysis.
      *
-     * @param id the id of the vertex to be added
+     * @param node the node/vertex to be added
      */
     private void addVertex(BiNChENode node) {
 
@@ -152,7 +153,7 @@ public class ChebiGraph {
      */
     private void addEdge(String previousId, String currentId) {
 
-        ChebiEdge edge = new ChebiEdge(previousId + "-" + currentId, 0d);
+        ChebiEdge edge = new ChebiEdge(previousId,currentId);
 
         if (!edgeSet.contains(edge.getId())) {
 
@@ -162,17 +163,11 @@ public class ChebiGraph {
     }
 
     /**
-     * Creates a rooted acyclic tree from the undirected sparse multigraph by calculating its minimum spanning trees.
-     * The resulting forest should ideally contain a single tree since the called ontology hierarchies should be
-     * interconnected.
-     * <p/>
-     * The size of the graph is determined by the values x, y in the tree layout.
-     * <p/>
-     * The tree is rooted to ChEBI:24431 "chemical entity" using custom implementations of the MinimumSpanningForest2
-     * (here, SpanningForest) and PrimSpanningTree (here, SpanningTree) classes.
+     * Layouts the graph using a Spring layout.
+     *
+     * TODO This should be injected rather than decided here.
      */
     private void layoutGraph() {
-
         layout = new SpringLayout2<ChebiVertex, ChebiEdge>(graph);
         ((SpringLayout2)layout).setForceMultiplier(0.1);
         layout.setSize(new Dimension(1920, 1100));
@@ -233,13 +228,10 @@ public class ChebiGraph {
     private Transformer<ChebiVertex, Paint> getVertexTransformer() {
 
         Transformer<ChebiVertex, Paint> vertexPaint = new Transformer<ChebiVertex, Paint>() {
-
             public Paint transform(ChebiVertex vertex) {
-
                 return vertex.getColor();
             }
         };
-
         return vertexPaint;
     }
 
@@ -249,7 +241,6 @@ public class ChebiGraph {
      * @param bvs the visualisation viewer
      */
     private void setMouse(VisualizationViewer<ChebiVertex, ChebiEdge> bvs) {
-
         DefaultModalGraphMouse gm = new DefaultModalGraphMouse();
         gm.setMode(ModalGraphMouse.Mode.TRANSFORMING);
         bvs.setGraphMouse(gm);
@@ -264,6 +255,12 @@ public class ChebiGraph {
         return graph.getVertices();
     }
 
+    /**
+     * Checks whether the given vertex is a leaf (in-degree == 0) in the graph.
+     *
+     * @param vertex the node to check
+     * @return true if vertex is a leaf.
+     */
     public boolean isLeaf(ChebiVertex vertex) {
         Collection<ChebiEdge> inEdges = getInEdges(vertex);
         return inEdges.isEmpty();
@@ -284,10 +281,21 @@ public class ChebiGraph {
         graph.removeVertex(chebiVertex);
     }
 
+    /**
+     * Returns the number of nodes in the graph.
+     *
+     * @return the count of vertex in the graph.
+     */
     public Integer getVertexCount() {
         return graph.getVertexCount();
     }
 
+    /**
+     * Returns the out edges for a {@link ChebiVertex}.
+     *
+     * @param chebiVertex to obtain out edges for.
+     * @return a collection containing all edges that depart from chebiVertex.
+     */
     public Collection<ChebiEdge> getOutEdges(ChebiVertex chebiVertex) {
         Collection<ChebiEdge> outEdges = graph.getOutEdges(chebiVertex);
         if(outEdges==null)
@@ -295,6 +303,12 @@ public class ChebiGraph {
         return outEdges;
     }
 
+    /**
+     * Returns the in edges for a {@link ChebiVertex}.
+     *
+     * @param chebiVertex to obtain in edges for.
+     * @return a collection containing all edges that go to the chebiVertex.
+     */
     public Collection<ChebiEdge> getInEdges(ChebiVertex chebiVertex) {
         Collection<ChebiEdge> inEdges = graph.getInEdges(chebiVertex);
         if(inEdges==null)
@@ -314,6 +328,7 @@ public class ChebiGraph {
      * @param node
      * @return 
      */
+    @Deprecated
     public Double getVertexPValue(ChebiVertex node) {
         return node.getCorrPValue()!=null ? node.getCorrPValue() : node.getpValue();
     }
@@ -328,18 +343,21 @@ public class ChebiGraph {
         addEdge(child.getChebiId(), parent.getChebiId());
     }
 
+    /**
+     * Retrieves a collection with all the edges of the graph.
+     *
+     * @return a collection with all edges.
+     */
     public Collection<ChebiEdge> getEdges() {
-//    	Graph<ChebiVertex, ChebiEdge> temp = layout.getGraph();
-//    	return temp.getEdges();
         return graph.getEdges();
     }
     /**
      * Returns the root of the graph, the ChebiVertex which only has incoming edges (the most general ChEBI node).
      *
      * @deprecated use {@link #getRoots() } instead.
-     * 
      * @return root vertex or null if the graph has no root. 
      */
+    @Deprecated
     public ChebiVertex getRoot() {
         for (ChebiVertex chebiVertex : graph.getVertices()) {
             if(getOutEdges(chebiVertex).isEmpty() && !getInEdges(chebiVertex).isEmpty()) {

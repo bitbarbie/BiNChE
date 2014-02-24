@@ -53,6 +53,11 @@ import java.util.Map;
 import java.util.Set;
 //-------------------------------------------------------------------------
 
+/**
+ * Part of the original BiNGO Source Code. Adapted from : AnnotationFlatFileReader.java in Cytoscape
+ *
+ * @author Steven Maere
+ */
 public class BiNGOAnnotationFlatFileReader {
     private Annotation annotation;
     private String annotationType;

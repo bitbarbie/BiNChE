@@ -52,6 +52,13 @@ import java.util.Set;
 
 //-------------------------------------------------------------------------
 
+/**
+ * Part of the original BiNGO Source Code. Adapted from : AnnotationFlatFileReader.java in Cytoscape
+ *
+ * This class reads the BiNGO annotation text file.
+ *
+ * @author Steven Maere
+ */
 public class BiNGOAnnotationDefaultReader {
 
     Annotation annotation;

@@ -26,9 +26,11 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * This is a decorator class for the AnnotationParser.
+ * This is an extension of the {@link AnnotationParser} to accommodate the ChEBI Ontology</br>
+ * and related assumptions.
  *
- * @author pmoreno
+ * @author Pablo Moreno
+ * @author Janna Hastings
  */
 public class ChEBIAnnotationParser extends AnnotationParser {
 
@@ -73,7 +75,7 @@ public class ChEBIAnnotationParser extends AnnotationParser {
     }
 
     /*
-     *Method that parses the custom annotation file into an annotation-object and
+     * Method that parses the custom annotation file into an annotation-object and
      * returns a string containing whether the operation is correct or not.
      *
      * In the ChEBI annotation parser, this will produce the chebi to chebi
@@ -123,7 +125,9 @@ public class ChEBIAnnotationParser extends AnnotationParser {
 
     }
 
-
+    /**
+     * Method that governs loading and remapping of annotation files
+     */
     @Override
     public void calculate() {
     	System.out.println("In ChEBIAnnotationParser.calculate()");

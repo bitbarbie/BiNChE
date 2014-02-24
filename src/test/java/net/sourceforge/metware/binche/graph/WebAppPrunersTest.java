@@ -87,7 +87,7 @@ public class WebAppPrunersTest {
 
         List<ChEBIGraphPruner> pruners = Arrays.asList(
                 //new MoleculeLeavesPruner(), 
-                new LowPValueBranchPruner(0.05),
+                new HighPValueBranchPruner(0.05),
                 new LinearBranchCollapserPruner(),
                 new RootChildrenPruner(3, true),
                 new ZeroDegreeVertexPruner());

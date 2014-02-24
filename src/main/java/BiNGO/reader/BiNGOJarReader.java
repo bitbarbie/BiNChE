@@ -47,7 +47,11 @@ import java.net.JarURLConnection;
 import java.net.URL;
 import java.util.jar.JarFile;
 
-//---------------------------------------------------------------------------
+/**
+ * Part of the original BiNGO Source Code, adapted from TextJarReader.java (cytoscape).
+ *
+ * @author mes
+ */
 public class BiNGOJarReader {
 
     String filename;

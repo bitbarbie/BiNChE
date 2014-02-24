@@ -1,5 +1,5 @@
 /**
- * LowPValueBranchPruner.java
+ * HighPValueBranchPruner.java
  *
  * 2012.10.21
  *
@@ -23,20 +23,27 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 /**
- * @name LowPValueBranchPruner
- * @date 2012.10.21
- * @version $Rev$ : Last Changed $Date$
- * @author pmoreno
- * @author $Author$ (this version)
- * @brief Gets rid of branches that have high pvalues.
+ * This pruner looks for branches of the ontology in the enrichment analysis result graph which
+ * have only high p-values, and gets rid of them. If the branch inspected has at least one node with
+ * a p-value below threshold set, then the branch is kept.
  *
+ * @name HighPValueBranchPruner
+ * @date 2012.10.21
+ * @author Pablo Moreno
+ * @author Stephan Beisken
  */
-public class LowPValueBranchPruner implements ChEBIGraphPruner {
+public class HighPValueBranchPruner implements ChEBIGraphPruner {
 
-    private static final Logger LOGGER = Logger.getLogger(LowPValueBranchPruner.class);
+    private static final Logger LOGGER = Logger.getLogger(HighPValueBranchPruner.class);
     private Double pvalueThreshold;
 
-    public LowPValueBranchPruner(Double pvalueThreshold) {
+    /**
+     * Constructor which takes as parameter the p-value threshold to be used. Anything higher than this is set for
+     * rejection/removal.
+     *
+     * @param pvalueThreshold the maximal p-value to accept before rejecting the node.
+     */
+    public HighPValueBranchPruner(Double pvalueThreshold) {
         this.pvalueThreshold = pvalueThreshold;
     }
 
@@ -66,9 +73,6 @@ public class LowPValueBranchPruner implements ChEBIGraphPruner {
 
         List<ChebiVertex> toRemVertex = new ArrayList<ChebiVertex>();
         Collection<ChebiVertex> children = graph.getChildren(node);
-        //System.out.println("Visiting "+node.getChebiName());
-        //System.out.println("Children "+children.size()+" "+children.toString());
-        //System.out.println("PValue   "+graph.getVertexPValue(node));
 
         for (ChebiVertex childNode : children) {
             if (!processNode(childNode, graph)) {

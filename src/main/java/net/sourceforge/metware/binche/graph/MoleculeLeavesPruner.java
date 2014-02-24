@@ -23,15 +23,13 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 /**
+ * This prunner inspects the graph, descending to the leaves and removing any leave that it is a defined molecule, and
+ * not a class but a defined molecule.
+ *
  * @name MoleculeLeavesPruner
  * @date 2012.10.18
- * @version $Rev$ : Last Changed $Date$
- * @author pmoreno
- * @author $Author$ (this version)
- * @brief Prunes leaves that are molecules (most of them should be).
- *
- * This prunner inspects the graph, descending to the leaves and removing any leave that it is a defined molecule, and
- * not a class or role. This is useful for reducing nodes in the binomial enrichment analysis.
+ * @author Pablo Moreno
+ * @author Stephan Beisken
  */
 public class MoleculeLeavesPruner implements ChEBIGraphPruner {
 

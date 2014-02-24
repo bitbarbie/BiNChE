@@ -25,28 +25,40 @@ package cytoscape.data.annotation;
 import org.apache.log4j.Logger;
 
 /**
- * @name    ChEBIOntologyTerm
- * @date    2012.10.19
- * @version $Rev$ : Last Changed $Date$
- * @author  pmoreno
- * @author  $Author$ (this version)
- * @brief   ...class description...
+ * Extends the OntologyTerm to accommodate to a ChEBI Term, which can be either a defined small molecule or a chemical/</br>
+ * role class.
  *
+ * @author Pablo Moreno
  */
 public class ChEBIOntologyTerm extends OntologyTerm{
 
-    private static final Logger LOGGER = Logger.getLogger( ChEBIOntologyTerm.class );
-
     private boolean molecule;
-    
+
+    /**
+     * Ontology term used to represent ChEBI entities. The name is the label name to be used in the tabular and graphical
+     * outputs, and should correspond to the main name of the ChEBI entity represented. The id correspond to the numeric
+     * part of the ChEBI ID (number 29101 in CHEBI:29101).
+     *
+     * @param name the main name of the ChEBI entity represented.
+     * @param id the numeric part of the ChEBI id.
+     */
     public ChEBIOntologyTerm(String name, int id) {
         super(name, id);
     }
 
+    /**
+     *
+     * @return true if the chemical entity is a defined molecule (ie. can have an InChI computed, has no variable parts.)
+     */
     public boolean isMolecule() {
         return molecule;
     }
 
+    /**
+     * Sets whether the chemical entity represented by this ChEBI term is a molecule or not.
+     *
+     * @param molecule true if the entity is a molecule (has a defined chemical structure, ie. can have an InChI computed).
+     */
     public void setMolecule(boolean molecule) {
         this.molecule = molecule;
     }

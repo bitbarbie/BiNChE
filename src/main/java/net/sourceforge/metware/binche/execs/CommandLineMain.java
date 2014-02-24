@@ -28,7 +28,7 @@ import java.util.ArrayList;
  * effectively provides a wrapper for command option processing utilising the
  * Apache Commons CLI library
  *
- * @author johnmay <john.wilkinsonmay@gmail.com>
+ * @author John May
  */
 public abstract class CommandLineMain extends ArrayList<Option> {
 

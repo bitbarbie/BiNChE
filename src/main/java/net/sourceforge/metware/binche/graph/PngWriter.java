@@ -27,10 +27,23 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 
+/**
+ * Writes the ChEBI enrichment analysis graph, through an image server, as a png file.
+ *
+ * @author Stephan Beisken
+ */
 public class PngWriter {
 
     private static final Logger LOGGER = Logger.getLogger(PngWriter.class);
 
+    /**
+     * Writes the data contained in the server, in the specified dimensions, to the filename
+     * provided.
+     *
+     * @param server
+     * @param fileName
+     * @param dim
+     */
     public void writePng(VisualizationImageServer server, String fileName, Dimension dim) {
 
         Image image = server.getImage(new Point.Double(0, 0), dim);
