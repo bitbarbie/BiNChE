@@ -100,10 +100,11 @@
     </build>
 
     <dependencies>
-        <dependency>
-            <groupId>cytoscape</groupId>
-            <artifactId>application</artifactId>
+          <dependency>
+            <groupId>some.group</groupId>
+            <artifactId>cytoscape</artifactId>
             <version>2.8.3</version>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>colt</groupId>

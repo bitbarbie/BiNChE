@@ -10,7 +10,7 @@
                 <exec.args>-Xms2048m -Xmx4096m -XX:PermSize=512m -XX:MaxPermSize=2048m -classpath %classpath net.sourceforge.metware.binche.loader.OfficialChEBIOboLoader</exec.args>
                 <exec.executable>java</exec.executable>
                 <exec.classpathScope>runtime</exec.classpathScope>
-                <exec.workingdir>/home/princess/NetBeansProjects/BiNChE</exec.workingdir>
+                <exec.workingdir>/home/sarah/NetBeansProjects/BiNChE</exec.workingdir>
             </properties>
         </action>
         <action>
@@ -24,7 +24,7 @@
                 <exec.executable>java</exec.executable>
                 <exec.classpathScope>runtime</exec.classpathScope>
                 <jpda.listen>true</jpda.listen>
-                <exec.workingdir>/home/princess/NetBeansProjects/BiNChE</exec.workingdir>
+                <exec.workingdir>/home/sarah/NetBeansProjects/BiNChE</exec.workingdir>
             </properties>
         </action>
         <action>
@@ -36,7 +36,7 @@
             <properties>
                 <exec.args>${profiler.args} -Xms2048m -Xmx4096m -XX:PermSize=512m -XX:MaxPermSize=2048m -classpath %classpath net.sourceforge.metware.binche.loader.OfficialChEBIOboLoader</exec.args>
                 <exec.executable>${profiler.java}</exec.executable>
-                <exec.workingdir>/home/princess/NetBeansProjects/BiNChE</exec.workingdir>
+                <exec.workingdir>/home/sarah/NetBeansProjects/BiNChE</exec.workingdir>
             </properties>
         </action>
     </actions>
