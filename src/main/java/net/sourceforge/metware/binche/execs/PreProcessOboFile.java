@@ -153,15 +153,19 @@ public class PreProcessOboFile {
             OWLReasoner reasoner = reasonerFactory.createReasoner(ont);
             graph.setReasoner(reasoner);
 
-// Classify the ontology.
-            reasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
-            reasoner.precomputeInferences(InferenceType.CLASS_ASSERTIONS);
-// Fresh empty ontology
-            OWLOntology infOnt = man.createOntology();
+			// Classify the ontology.
+			reasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
+			reasoner.precomputeInferences(InferenceType.CLASS_ASSERTIONS);
+			// Fresh empty ontology
+			OWLOntology infOnt = man.createOntology(IRI.create("ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl"));
 
-            long start = System.currentTimeMillis();
-            Set<OWLClass> classSubSet = reasoner.getSubClasses(graph.getOWLClassByIdentifier(chebiIDsForSubtrees.get(0)), false).getFlattened();
-            classSubSet.add(graph.getOWLClassByIdentifier(chebiIDsForSubtrees.get(0)));
+			long start = System.currentTimeMillis();
+			Set<OWLClass> classSubSet = reasoner.getSubClasses(graph.getOWLClassByIdentifier(chebiIDsForSubtrees.get(0)), false).getFlattened();
+			classSubSet.add(graph.getOWLClassByIdentifier(chebiIDsForSubtrees.get(0)));
+			ArrayList<OWLProperty> propertiesOfInterest = new ArrayList<OWLProperty>();
+			for (String iri: propertiesToInferUpon){
+				propertiesOfInterest.add(graph.getOWLObjectProperty(iri));
+			}
 
             ArrayList<OWLProperty> propertiesOfInterest = new ArrayList<OWLProperty>();
             for (String iri : propertiesToInferUpon) {
@@ -173,13 +177,89 @@ public class PreProcessOboFile {
                 classSubSet.add(graph.getOWLClassByIdentifier(chebiIDsForSubtrees.get(i)));
             }
 
-// Get all objects in the graph and then test which are OWLClass.
-            Set<OWLObject> objects = graph.getAllOWLObjects();
-// We only want to follow isA edges, so we pass an empty set to the getAncestors method
-            Set<OWLPropertyExpression> properties = new TreeSet<OWLPropertyExpression>();
-            OWLClass current;
-            Set<OWLObject> ancestors;
-            OWLDataFactory factory = man.getOWLDataFactory();
+					ancestors = graph.getAncestors(current, properties);
+					for (OWLObject anc: ancestors){
+						// add inherited relations
+						if ( anc.getClass().toString().equalsIgnoreCase(OWLObjectSomeValuesFromImpl.class.toString())){
+							OWLObjectSomeValuesFromImpl exists = (OWLObjectSomeValuesFromImpl) anc;
+							// test if the classes used in of these relations is also in the right subtree
+							Set<OWLClass> classesInSignature = exists.getClassesInSignature();
+							boolean inTree = true;
+							for (OWLClass referencedClass : classesInSignature){
+								if(!classSubSet.contains(referencedClass)) {
+                                                                inTree = false;
+                                                            }
+							}
+							if (inTree && (propertiesOfInterest.contains(exists.getProperty()))){
+								// Class is in the right subtree , so add the relation
+								man.applyChange(new AddAxiom(infOnt, factory.getOWLSubClassOfAxiom(current, exists)));
+								if (writeSeparateAnnotationFile) {
+                                    writeToAnnotationFile(cout, current, exists);
+                                }
+								
+//COMMENTED OUT AS THIS USES THE WRONG DIRECTION, CURRENTLY CARRIES UP THE TARGET HIERARCHY RATHER THAN DOWN THE SOURCE HIERARCHY
+//TODO: 								
+								// follow up the hierarchy of the object class above and add parents too
+//								if (carryDownInferredRelations) {
+//									for (OWLClass referencedClass : classesInSignature){
+//
+//										Set<OWLObject> parents = graph.getAncestors(referencedClass);
+//										for (OWLObject parent: parents){
+//											if (classSubSet.contains(parent)){
+//												//replace the object with it's ancestor in the relation assertion
+//												OWLObjectSomeValuesFrom inferred = factory.getOWLObjectSomeValuesFrom(exists.getProperty(), (OWLClassExpression) parent);
+//												man.applyChange(new AddAxiom(infOnt, factory.getOWLSubClassOfAxiom(current, inferred)));
+//
+//												if (writeSeparateAnnotationFile) {
+//													writeToAnnotationFile(cout, current, inferred);
+//												}
+//											}
+//										}
+//									}
+//								}
+							}
+						}
+					}
+					// add subclassOf relations
+					for (OWLAxiom x : ont.getReferencingAxioms(current)){
+						Set<OWLClass> classesInSignature = x.getClassesInSignature();
+						boolean inTree = true;
+						for (OWLClass referencedClass : classesInSignature){
+							if(!classSubSet.contains(referencedClass)) {
+                               inTree = false;
+                            }
+						}
+						Set<OWLObjectProperty> propertiesInSignature = x.getObjectPropertiesInSignature();
+						if (inTree && (propertiesOfInterest.containsAll(propertiesInSignature) || propertiesInSignature.isEmpty())) {
+                            man.applyChange(new AddAxiom(infOnt, x));
+                        }
+					}
+					// get annotations from the source ontology
+					Set<OWLAnnotation> annotations = current.getAnnotations(ont);
+					for (OWLAnnotation ann : annotations){
+						// only add specified annotations to the new ont
+						for (String annoType : metadatas) {
+							if (ann.getProperty().toString().toLowerCase().contains(annoType.toLowerCase())
+									|| ann.getValue().toString().toLowerCase().contains(annoType.toLowerCase())){
+								man.applyChange(new AddAxiom(infOnt, factory.getOWLAnnotationAssertionAxiom(current.getIRI(), ann)));
+							}
+						}
+					}
+				}
+			}
+			System.out.println("Finished the ontology. \nWriting to file, please be patient...");
+			// Save the new ontology
+			man.saveOntology(infOnt, new OBOOntologyFormat(), IRI.create(new File(newOntIRI+".temp").toURI()));
+			System.out.println("Ontology saved. Need to do some post-processing corrections now.");
+			postProcess(newOntIRI+".temp", newOntIRI);
+			if (writeSeparateAnnotationFile) {
+                cout.close();
+            }
+			System.out.println("Finished all " + (System.currentTimeMillis() - start) + " milliseconds. ");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}	
 
             for (OWLObject obj : objects) {
 // We only need classes
