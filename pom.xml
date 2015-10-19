@@ -10,7 +10,7 @@
     <groupId>be.ugent.psb</groupId>
     <artifactId>binche</artifactId>
     <packaging>jar</packaging>
-    <version>0.2.3-SNAPSHOT</version>
+    <version>0.2.4</version>
     <repositories>
         <repository>
             <id>cytoscape</id>

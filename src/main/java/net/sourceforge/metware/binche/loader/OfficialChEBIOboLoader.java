@@ -71,7 +71,7 @@ public class OfficialChEBIOboLoader {
                 true, 
                 BiNChEOntologyPrefs.RoleOntology.getRootChEBIEntries(), 
                 Arrays.asList("rdfs:label"), new ArrayList<String>());
-        File tmpRoleOnt = new File(BiNChEOntologyPrefs.RoleOntology.name()+".temp");
+        File tmpRoleOnt = new File(binchePrefs.get(BiNChEOntologyPrefs.RoleOntology.name(),null)+".temp");
         tmpRoleOnt.delete();
         
         ppof.getTransitiveClosure(tmpFileObo.getAbsolutePath(), binchePrefs.get(BiNChEOntologyPrefs.StructureOntology.name(), null), 
@@ -80,17 +80,20 @@ public class OfficialChEBIOboLoader {
                 BiNChEOntologyPrefs.StructureOntology.getRootChEBIEntries(), 
                 Arrays.asList("rdfs:label","InChI"), 
                 new ArrayList<String>());
-        File tmpStructOnt = new File(BiNChEOntologyPrefs.StructureOntology.name()+".temp");
+        File tmpStructOnt = new File(binchePrefs.get(BiNChEOntologyPrefs.StructureOntology.name(),null)+".temp");
         tmpStructOnt.delete();
         
         ppof.getTransitiveClosure(tmpFileObo.getAbsolutePath(), binchePrefs.get(BiNChEOntologyPrefs.RoleAndStructOntology.name(),null), 
-                false, 
-                false, 
+                true,
+                true,
                 BiNChEOntologyPrefs.RoleAndStructOntology.getRootChEBIEntries(), 
-                Arrays.asList("rdfs:label","InChI"), 
-                Arrays.asList("http://purl.obolibrary.org/obo/chebi#has_role"));
-        File tmpStructRoleOnt = new File(BiNChEOntologyPrefs.RoleAndStructOntology.name()+".temp");
+                Arrays.asList("rdfs:label","InChI"),
+                Arrays.asList("http://purl.obolibrary.org/obo/RO_0000087"));
+        File tmpStructRoleOnt = new File(binchePrefs.get(BiNChEOntologyPrefs.RoleAndStructOntology.name(),null)+".temp");
         tmpStructRoleOnt.delete();
+        File structRoleAnnot = new File(binchePrefs.get(BiNChEOntologyPrefs.RoleAndStructOntology.name(),null).replace(".obo",".txt"));
+        String fullPath = binchePrefs.get(BiNChEOntologyPrefs.RoleAndStructOntology.name(),null);
+        structRoleAnnot.renameTo(new File(fullPath.substring(0,fullPath.lastIndexOf(File.separator))+File.separator+"chebi_roles.anno"));
         
         tmpFileObo.delete();
     }

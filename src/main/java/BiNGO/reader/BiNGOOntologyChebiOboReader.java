@@ -204,7 +204,8 @@ public class BiNGOOntologyChebiOboReader extends BiNGOOntologyOboReader {
                         if (value.trim().equals("true")) {
                             obsolete = true;
                         }
-                    //} else if (ref.equals("synonym") && value.contains("RELATED InChI")) {
+                    } else if (ref.equals("synonym") && value.contains("InChI=")) {
+                        molecule=true;
                     } else if (ref.equals("hasRelatedSynonym") && value.startsWith("InChI=1")) {
                         molecule=true;
                     }

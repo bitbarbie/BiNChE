@@ -7,7 +7,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.2:exec</goal>
             </goals>
             <properties>
-                <exec.args>-Xms2048m -Xmx4096m -XX:PermSize=512m -XX:MaxPermSize=2048m -classpath %classpath net.sourceforge.metware.binche.execs.PreProcessOboFile /home/sarah/Data_Storage_for_HDD/NetBeansData/rawData/obo/chebi_20140804.obo /home/sarah/Data_Storage_for_HDD/NetBeansData/rawData/obo/out_test_20140804.obo false true CHEBI:24431 is_a</exec.args>
+                <exec.args>-Xms2048m -Xmx4096m -XX:PermSize=512m -XX:MaxPermSize=2048m -classpath %classpath net.sourceforge.metware.binche.execs.PreProcessOboFile</exec.args>
                 <exec.executable>java</exec.executable>
                 <exec.classpathScope>runtime</exec.classpathScope>
                 <exec.workingdir>/home/sarah/NetBeansProjects/BiNChE</exec.workingdir>
@@ -20,7 +20,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.2:exec</goal>
             </goals>
             <properties>
-                <exec.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -Xms2048m -Xmx4096m -XX:PermSize=512m -XX:MaxPermSize=2048m -classpath %classpath net.sourceforge.metware.binche.execs.PreProcessOboFile /home/sarah/Data_Storage_for_HDD/NetBeansData/rawData/obo/chebi_20140804.obo /home/sarah/Data_Storage_for_HDD/NetBeansData/rawData/obo/out_test_20140804.obo false true CHEBI:24431 is_a</exec.args>
+                <exec.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -Xms2048m -Xmx4096m -XX:PermSize=512m -XX:MaxPermSize=2048m -classpath %classpath net.sourceforge.metware.binche.execs.PreProcessOboFile</exec.args>
                 <exec.executable>java</exec.executable>
                 <exec.classpathScope>runtime</exec.classpathScope>
                 <jpda.listen>true</jpda.listen>
@@ -34,7 +34,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.2:exec</goal>
             </goals>
             <properties>
-                <exec.args>-Xms2048m -Xmx4096m -XX:PermSize=512m -XX:MaxPermSize=2048m -classpath %classpath net.sourceforge.metware.binche.execs.PreProcessOboFile /home/sarah/Data_Storage_for_HDD/NetBeansData/rawData/obo/chebi_20140804.obo /home/sarah/Data_Storage_for_HDD/NetBeansData/rawData/obo/out_test_20140804.obo false true CHEBI:24431 is_a</exec.args>
+                <exec.args>-Xms2048m -Xmx4096m -XX:PermSize=512m -XX:MaxPermSize=2048m -classpath %classpath net.sourceforge.metware.binche.execs.PreProcessOboFile</exec.args>
                 <exec.executable>${profiler.java}</exec.executable>
                 <exec.workingdir>/home/sarah/NetBeansProjects/BiNChE</exec.workingdir>
             </properties>

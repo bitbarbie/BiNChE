@@ -169,6 +169,7 @@ pip-log.txt
 # .idea files
 .idea
 .iml
+*.iml
 
 # compiled archives
 out
