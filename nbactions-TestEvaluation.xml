@@ -7,7 +7,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.2:exec</goal>
             </goals>
             <properties>
-                <exec.args>-Xmx512m -XX:PermSize=256m -XX:MaxPermSize=256m -classpath %classpath net.sourceforge.metware.binche.execs.EvaluationMain -i /home/sarah/Link_Data_Storage_for_HDD/NetBeansData/BiNChE/run_MTBLS2/chebi_testfiles/2_Indol-3-ylmethylamine_CHEBI.tsv -o ../../Link_Data_Storage_for_HDD/NetBeansData/BiNChE/TestMain/out</exec.args>
+                <exec.args>-Xmx512m -XX:PermSize=256m -XX:MaxPermSize=256m -classpath %classpath net.sourceforge.metware.binche.execs.EvaluationMain -i /media/sarah/40eb1f64-ae34-4a23-be5b-3e8de0624de5/Data_Storage_for_HDD/NetBeansData/BiNChE/run_201510/ppm10/chebi_testfiles_ppm10/CO000225_CHEBI:17650.tsv -o /media/sarah/40eb1f64-ae34-4a23-be5b-3e8de0624de5/Data_Storage_for_HDD/NetBeansData/BiNChE/run_201510/ppm10/chebi_resultfiles_ppm10/CO000225_17650</exec.args>
                 <exec.executable>java</exec.executable>
                 <exec.classpathScope>runtime</exec.classpathScope>
                 <exec.workingdir>/home/sarah/NetBeansProjects/BiNChE</exec.workingdir>
@@ -20,7 +20,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.2:exec</goal>
             </goals>
             <properties>
-                <exec.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -Xmx512m -XX:PermSize=256m -XX:MaxPermSize=256m -classpath %classpath net.sourceforge.metware.binche.execs.EvaluationMain -i /home/sarah/Link_Data_Storage_for_HDD/NetBeansData/BiNChE/run_MTBLS2/chebi_testfiles/2_Indol-3-ylmethylamine_CHEBI.tsv -o ../../Link_Data_Storage_for_HDD/NetBeansData/BiNChE/TestMain/out</exec.args>
+                <exec.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -Xmx512m -XX:PermSize=256m -XX:MaxPermSize=256m -classpath %classpath net.sourceforge.metware.binche.execs.EvaluationMain -i /media/sarah/40eb1f64-ae34-4a23-be5b-3e8de0624de5/Data_Storage_for_HDD/NetBeansData/BiNChE/run_201510/ppm10/chebi_testfiles_ppm10/CO000225_CHEBI:17650.tsv -o /media/sarah/40eb1f64-ae34-4a23-be5b-3e8de0624de5/Data_Storage_for_HDD/NetBeansData/BiNChE/run_201510/ppm10/chebi_resultfiles_ppm10/CO000225_17650</exec.args>
                 <exec.executable>java</exec.executable>
                 <exec.classpathScope>runtime</exec.classpathScope>
                 <jpda.listen>true</jpda.listen>
@@ -34,7 +34,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.2:exec</goal>
             </goals>
             <properties>
-                <exec.args>-Xmx512m -XX:PermSize=256m -XX:MaxPermSize=256m -classpath %classpath net.sourceforge.metware.binche.execs.EvaluationMain -i /home/sarah/Link_Data_Storage_for_HDD/NetBeansData/BiNChE/run_MTBLS2/chebi_testfiles/2_Indol-3-ylmethylamine_CHEBI.tsv -o ../../Link_Data_Storage_for_HDD/NetBeansData/BiNChE/TestMain/out</exec.args>
+                <exec.args>-Xmx512m -XX:PermSize=256m -XX:MaxPermSize=256m -classpath %classpath net.sourceforge.metware.binche.execs.EvaluationMain -i /media/sarah/40eb1f64-ae34-4a23-be5b-3e8de0624de5/Data_Storage_for_HDD/NetBeansData/BiNChE/run_201510/ppm10/chebi_testfiles_ppm10/CO000225_CHEBI:17650.tsv -o /media/sarah/40eb1f64-ae34-4a23-be5b-3e8de0624de5/Data_Storage_for_HDD/NetBeansData/BiNChE/run_201510/ppm10/chebi_resultfiles_ppm10/CO000225_17650</exec.args>
                 <exec.executable>${profiler.java}</exec.executable>
                 <exec.workingdir>/home/sarah/NetBeansProjects/BiNChE</exec.workingdir>
             </properties>

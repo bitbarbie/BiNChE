@@ -83,9 +83,9 @@ public class EvaluationMain extends CommandLineMain {
                                     
                     System.out.print("Iterating "+inputPath+"...");
                     try{
-                    runDefault(inputPath,outputPath);
-                    System.out.print("succeeded\n");
-                    } catch (Exception ex) {
+                        runDefault(inputPath,outputPath);
+                        System.out.print("succeeded\n");
+                    } catch (StackOverflowError|Exception ex) {
                         bw.write("################\n");
                         bw.write("# ERROR SADDLE #\n");
                         bw.write("################\n");
@@ -103,7 +103,7 @@ public class EvaluationMain extends CommandLineMain {
                     try{
                     runHyper(inputPath,outputPath);
                     System.out.print("succeeded\n");
-                    } catch (Exception ex) {
+                    } catch (StackOverflowError|Exception ex) {
                         bw.write("###############\n");
                         bw.write("# ERROR HYPER #\n");
                         bw.write("###############\n");
@@ -132,9 +132,17 @@ public class EvaluationMain extends CommandLineMain {
             String outputPath = getCommandLine().getOptionValue("o");
 
             if( hasOption("p")) {
-                runHyper(inputPath, outputPath);
+                try{
+                    runHyper(inputPath, outputPath);
+                }catch (StackOverflowError|Exception ex) {
+                    System.out.println("Error Stack Overflow - Hyper");
+                } 
             } else{
-                runDefault(inputPath, outputPath);
+                try{
+                    runDefault(inputPath, outputPath);
+                }catch (StackOverflowError|Exception ex) {
+                    System.out.println("Error Stack Overflow - Saddle");
+                }
             }
             LOGGER.log(Level.INFO, "############ Stop ############");   
         }
