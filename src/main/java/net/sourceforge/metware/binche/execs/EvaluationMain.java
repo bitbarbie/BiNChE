@@ -85,7 +85,7 @@ public class EvaluationMain extends CommandLineMain {
                     try{
                         runDefault(inputPath,outputPath);
                         System.out.print("succeeded\n");
-                    } catch (StackOverflowError|Exception ex) {
+                    } catch (Exception ex) {
                         bw.write("################\n");
                         bw.write("# ERROR SADDLE #\n");
                         bw.write("################\n");
@@ -98,12 +98,21 @@ public class EvaluationMain extends CommandLineMain {
                         bw.flush();
                         System.out.print("error\n");
                         continue;
+                    }catch(StackOverflowError er){
+                        bw.write("########################\n");
+                        bw.write("# STACKOVERFLOW SADDLE #\n");
+                        bw.write("########################\n");
+                        bw.write("in "+ inputPath +"\n");
+                        bw.write("***********************\n\n");
+                        bw.flush();
+                        System.out.print("error\n");
+                        continue;
                     }
     
                     try{
                     runHyper(inputPath,outputPath);
                     System.out.print("succeeded\n");
-                    } catch (StackOverflowError|Exception ex) {
+                    } catch (Exception ex) {
                         bw.write("###############\n");
                         bw.write("# ERROR HYPER #\n");
                         bw.write("###############\n");
@@ -112,6 +121,15 @@ public class EvaluationMain extends CommandLineMain {
                         bw.write(ex.toString()+"\n");
                         bw.write("------------------\n");
                         bw.write(ex.getMessage()+"\n");
+                        bw.write("***********************\n\n");
+                        bw.flush();
+                        System.out.print("error\n");
+                        continue;
+                    }catch(StackOverflowError er){
+                        bw.write("########################\n");
+                        bw.write("# STACKOVERFLOW HYPER  #\n");
+                        bw.write("########################\n");
+                        bw.write("in "+ inputPath +"\n");
                         bw.write("***********************\n\n");
                         bw.flush();
                         System.out.print("error\n");
@@ -132,17 +150,9 @@ public class EvaluationMain extends CommandLineMain {
             String outputPath = getCommandLine().getOptionValue("o");
 
             if( hasOption("p")) {
-                try{
                     runHyper(inputPath, outputPath);
-                }catch (StackOverflowError|Exception ex) {
-                    System.out.println("Error Stack Overflow - Hyper");
-                } 
             } else{
-                try{
                     runDefault(inputPath, outputPath);
-                }catch (StackOverflowError|Exception ex) {
-                    System.out.println("Error Stack Overflow - Saddle");
-                }
             }
             LOGGER.log(Level.INFO, "############ Stop ############");   
         }
