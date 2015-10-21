@@ -29,10 +29,11 @@ public class DotWriter {
      * 
      * @param graph
      * @param color either an object of class ColorGradient or null to get a discrete color scheme
-     * @param filenameOut
-     * @param correctID 
+     * @param filenameOut 
+     * @param correctID defines the correct id which is then printed as an rectangle in the graph
+     * @param printNames defines if Names of the Chebi instances should be included into the nodes
      */
-    public void writeEvaluationDot(ChebiGraph graph, ColorGradient colorGrad, String filenameOut, LinkedList<String> correctID){    
+    public void writeEvaluationDot(ChebiGraph graph, ColorGradient colorGrad, String filenameOut, LinkedList<String> correctID, boolean printNames){    
 
         try {
             BufferedWriter out = new BufferedWriter(new FileWriter(new File(filenameOut)));
@@ -59,12 +60,21 @@ public class DotWriter {
                         saturation= col.getAlpha()/255.0; 
                     }
                     
-                    out.write(indent + ID + " [ label=\""+ v.getChebiName() +"\\nCHEBI:"+v.getChebiId()+"\\np="+ ((pval==0.0) ? 0 : (pval==1.0) ? 1.0 : form.format(pval)) +"\""  
+                    if(printNames){
+                        out.write(indent + ID + " [ label=\""+ v.getChebiName() +"\\nCHEBI:"+v.getChebiId()+"\\np="+ ((pval==0.0) ? 0 : (pval==1.0) ? 1.0 : form.format(pval)) +"\""  
+                                    + box 
+                                    + " style=filled fillcolor=" 
+                                    // invert saturation value alpha and scale in [0,1]
+                                    + "\".0 "+ saturation +" 1.0\""
+                                    +" ]\n");
+                    }else{
+                        out.write(indent + ID + " [ label=\"CHEBI:"+v.getChebiId()+"\\np="+ ((pval==0.0) ? 0 : (pval==1.0) ? 1.0 : form.format(pval)) +"\""  
                                 + box 
                                 + " style=filled fillcolor=" 
                                 // invert saturation value alpha and scale in [0,1]
                                 + "\".0 "+ saturation +" 1.0\""
                                 +" ]\n");
+                    }
                 }
             }
             else {
@@ -75,11 +85,19 @@ public class DotWriter {
                         box=" shape=box ";
                     }
                     Double pval = v.getpValue();
-                    out.write(indent + ID + " [ label=\""+v.getChebiName()+"\\nCHEBI:"+v.getChebiId()+"\\np="+ ((pval==0.0) ? 0 : (pval==1.0) ? 1.0 : form.format(pval))+"\""  
-                                + box 
-                                + " style=filled fillcolor=" 
-                                + getFillcolor(pval)
-                                +" ]\n");
+                    if(printNames){
+                        out.write(indent + ID + " [ label=\""+v.getChebiName()+"\\nCHEBI:"+v.getChebiId()+"\\np="+ ((pval==0.0) ? 0 : (pval==1.0) ? 1.0 : form.format(pval))+"\""  
+                                    + box 
+                                    + " style=filled fillcolor=" 
+                                    + getFillcolor(pval)
+                                    +" ]\n");
+                    }else{
+                        out.write(indent + ID + " [ label=\"CHEBI:"+v.getChebiId()+"\\np="+ ((pval==0.0) ? 0 : (pval==1.0) ? 1.0 : form.format(pval))+"\""  
+                                    + box 
+                                    + " style=filled fillcolor=" 
+                                    + getFillcolor(pval)
+                                    +" ]\n");
+                    }
                 }
             }
             // alle edges

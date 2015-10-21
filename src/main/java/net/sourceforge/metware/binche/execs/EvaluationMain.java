@@ -57,7 +57,7 @@ public class EvaluationMain extends CommandLineMain {
         add(new Option("o", "output directory", true, "directory to write output to (format: .../<id>)"));
         add(new Option("l", "file including in- and output filenames", true, "iterate a list of files"));
         add(new Option("p", "true", false, "calculate hypergeometric distribution rather than saddle sum method"));
-
+        add(new Option("d", "true", false, "print entity names into the result graphs"));
     }
 
     /**
@@ -228,8 +228,11 @@ public class EvaluationMain extends CommandLineMain {
         DotWriter writer = new DotWriter();
         ColorGradient cG = new ColorGradient(getListOfPValues(binche.getEnrichedNodes()), 0.05);
         
-        
-        writer.writeEvaluationDot(chebiGraph, cG , outputPath+".dot", chebiID);
+        if(hasOption("d")){
+            writer.writeEvaluationDot(chebiGraph, cG , outputPath+".dot", chebiID, true);
+        }else{
+            writer.writeEvaluationDot(chebiGraph, cG , outputPath+".dot", chebiID, false);    
+        }
     }
 
     /**
@@ -338,7 +341,11 @@ public class EvaluationMain extends CommandLineMain {
         DotWriter writer = new DotWriter();
         ColorGradient cG = new ColorGradient(getListOfPValues(binche.getEnrichedNodes()), 0.05);
         
-        writer.writeEvaluationDot(chebiGraph, cG , outputPath+".dot", chebiID);
+        if(hasOption("d")){
+            writer.writeEvaluationDot(chebiGraph, cG , outputPath+".dot", chebiID, true);
+        }else{
+            writer.writeEvaluationDot(chebiGraph, cG , outputPath+".dot", chebiID, false);
+        }
     }
        
        
