@@ -69,9 +69,10 @@ public class SaddleSumTestCalculate extends AbstractCalculateTestTask implements
 
         double tmp = 0.0d;
         double wmax = Collections.max(weights.values());
+       // double wmax =0;
         int N = (Integer) Collections.max(mapSmallN.values());             //Anzahl aller Blätter der Ontologie
         //int N = (Integer)mapSmallN.get(36342) + (Integer)mapSmallN.get(50906) + (Integer)mapSmallN.get(24431);
-        //System.out.println(N);
+       // System.out.println("N="+N);
         //System.out.println(wmax);       
         double rhoT = 0.0;      //Nenner von K'(t) 
         double D1RhoT = 0.0;    //Zähler von K'(t)
@@ -79,25 +80,28 @@ public class SaddleSumTestCalculate extends AbstractCalculateTestTask implements
         double sum = mapWeightSum.get(id);
 
         double diff = N - weights.size();
-
-
+        //System.out.println("diff="+diff);
         for (String idw : weightSet) {
             double w = weights.get(idw);
+//            System.out.println("curr weight "+w);
             tmp = Math.pow(Math.E, lambda * (w - wmax));
+//            System.out.println("lambda * (w - wmax) = "+lambda+" * ("+w+" - "+wmax+")="+(lambda * (w - wmax)));
             rhoT += tmp;
             tmp *= w;
             D1RhoT += tmp;
             tmp *= w;
             D2RhoT += tmp;
+//                        System.out.println("D2RhoT "+D2RhoT);
+
         }
         rhoT += diff * Math.pow(Math.E, lambda * (-wmax));
 
 
         double D1K = D1RhoT / rhoT;
-        double D2K = D2RhoT / rhoT - D1K * D1K;
+        double D2K = (D2RhoT / rhoT) - D1K * D1K;
 
         int m = (Integer) mapSmallN.get(id);
-
+//        System.out.println("m*D1K - sum = "+ m + "*" + D1K +"-"+sum + " = "+(m*D1K-sum));
 
 
         if (eq == 1) {
@@ -106,7 +110,7 @@ public class SaddleSumTestCalculate extends AbstractCalculateTestTask implements
         if (eq == 2) {
             return m * D2K;
         }                 //
-        if (eq == 3) {
+        if (eq == 3) { //expH
             double expH = rhoT * Math.pow(Math.E, lambda * (wmax - D1K)) / N;
             return expH;
         }
@@ -187,15 +191,16 @@ public class SaddleSumTestCalculate extends AbstractCalculateTestTask implements
     }
 
     public double bisect(int id, double intervalStart, double intervalEnd) {
-
+        
         double a = intervalStart;                             //Startwerte für lambda
         double b = intervalEnd;
+//        System.out.println("start bisect with "+a+":"+b);
 
         int n = 0;
         double c;
-        //System.out.println(n);
-        //System.out.println(mapWeightSum.get(id)+"\t"+mapSmallN.get(id));
-        //System.out.println(calcSaddlepoint(id,a,1)+ "\t"+calcSaddlepoint(id,b,1)); 
+   //     System.out.println("n="+n);
+//        System.out.println("bisect mapWeightSum, mapSmallN "+mapWeightSum.get(id)+"\t"+mapSmallN.get(id));
+//        System.out.println("Sp(a), Sp(b)" + calcSaddlepoint(id,a,1)+ "\t"+calcSaddlepoint(id,b,1)); 
         if (calcSaddlepoint(id, a, 1) * calcSaddlepoint(id, b, 1) <= 0) {      //Test auf Ungleichheit der Vorzeichen
 
             while (n <= 100) {                                       //max_iteration = 1000 -> zu klein? zu groß?
@@ -207,6 +212,12 @@ public class SaddleSumTestCalculate extends AbstractCalculateTestTask implements
                     //System.out.println(calcSaddlepoint(id,c,1));
 
                     // System.out.println(c);
+                    if ((calcSaddlepoint(id, c, 1) == 0.0)){
+//                        System.out.println("Return c wegen Saddlepoint gleich 0");
+                    }
+                    if((b - a) < 0.05){
+//                        System.out.println("Return wegen diff <0.05");
+                    }
                     return c;
                 }
 
@@ -216,14 +227,20 @@ public class SaddleSumTestCalculate extends AbstractCalculateTestTask implements
                 } else {
                     b = c;
                 }
+//                System.out.println("a:b" + a+":"+b);
             }
+        }else{
+//            System.out.println("ERROR in bisect interval borders have same sgn");
         }
+        
         if (calcSaddlepoint(id, a, 1) == calcSaddlepoint(id, b, 1)) {
+//            System.out.println("Return 0");
             return 0.0;
         } else {
             c = bisect(id, b, b + 10.0);
             //return 0.0;
         }
+//        System.out.println("Return c");
         return c;
     }
 
@@ -255,8 +272,10 @@ public class SaddleSumTestCalculate extends AbstractCalculateTestTask implements
         HashSet<Integer> set = new HashSet(mapWeightSum.keySet());      //Iterator über alle ChEBI-IDs aus mapWeightSum
 
         for (Integer id : set) {                                        //Schleife über alle Einträge in mapWeightSum
-            //System.out.println(mapWeightSum.get(id));
+//            System.out.print("\nid "+id+" score = ");
+//            System.out.println(mapWeightSum.get(id));
             //if((Integer)mapSmallN.get(id)<(Integer) Collections.max(mapSmallN.values())){
+            
             double d = bisect(id, 0.00001, 5.0);                             //Bisektion für aktuelles Array
             //if(d != 0.0){
             if ((calcSaddlepoint(id, d, 1)) == 0.0) {
@@ -266,7 +285,9 @@ public class SaddleSumTestCalculate extends AbstractCalculateTestTask implements
                 //System.out.println(calcSaddlepoint(id,n,1));                //gefundene Nullstelle für erg von Newton
 
                 lambdas.put(id, n);
-            }   // }                                      // map mit lmabdas füllen, ChEBI-ID->lambda
+            }   // } 
+//            System.out.println(id+" Lambda: "+lambdas.get(id));
+// map mit lmabdas füllen, ChEBI-ID->lambda
         }
         //System.out.println(mapWeightSum.size());
         //System.out.println(lambdas);
@@ -289,7 +310,7 @@ public class SaddleSumTestCalculate extends AbstractCalculateTestTask implements
 
             m = (Integer) mapSmallX.get(id);
 
-            //System.out.println("______\nm:"+"\t"+m);
+            //System.out.println("______\n"+id +" m:"+"\t"+m);
             lmbd = lambdas.get(id);
 
             expH = calcSaddlepoint(id, lmbd, 3);
@@ -301,6 +322,8 @@ public class SaddleSumTestCalculate extends AbstractCalculateTestTask implements
             phi = Math.sqrt(2 / Math.PI) * Math.pow(expH, m);
 
             double z = ((D * Math.sqrt(m)) / Math.sqrt(2));
+            //double z = ((D * Math.sqrt(m)));
+            
             //System.out.println("phi:\t"+phi);
 
             /**
@@ -309,14 +332,15 @@ public class SaddleSumTestCalculate extends AbstractCalculateTestTask implements
              */
             if (D * Math.sqrt(m) <= -1) {
                 double ndtr = (1 + ErrorFunction.erf(z)) / 2;
-                //System.out.println(ndtr);
-                //System.out.println(phi / C / Math.sqrt(m));
-                //System.out.println(phi / D / Math.sqrt(m));
+//                System.out.println("id "+id);
+//                System.out.println("ndtr= "+ndtr);
+//                System.out.println("phi / C / Math.sqrt(m) = "+phi / C / Math.sqrt(m));
+//                System.out.println("phi / D / Math.sqrt(m)= "+phi / D / Math.sqrt(m));
                 pValue = ndtr + (phi / C / Math.sqrt(m)) + (phi / D / Math.sqrt(m) / 2);
-                
-                if(pValue.isInfinite() || pValue.isNaN()) {
-                    pValue = 1.0d;
-                }
+//                System.out.println("pvalue="+pValue);
+//                if(pValue.isInfinite() || pValue.isNaN()) {
+//                    pValue = 1.0d;
+//               }
 
                 significanceTestMap.put(id, pValue);
             } else {

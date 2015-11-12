@@ -107,6 +107,28 @@ public class ChebiGraph {
         
         addTermsToTmpMap(enrichmentNodes);
         
+        // *** to include the leafs in the tree - Validation Sarah only ***
+        List<BiNChENode> addLater = new ArrayList<BiNChENode>();
+        for(String id : nodes){
+            /*
+            Double pValue = 1.0           
+            Double corrPValue = 1.0
+            Integer bigX = 1
+            Integer bigN = 1
+            Integer smallX = 0
+            Integer smallN = 0
+            String identifier = id ohen CHEBI
+            */
+            if(!tmpBiNCheNodeMap.containsKey(id)){
+                BiNChENode tmpNode = new BiNChENode(1.0, 1.0, 1, 1, 0, 0, id);
+                enrichmentNodes.add(tmpNode);
+                addLater.add(tmpNode);
+            }
+        }
+        addTermsToTmpMap(addLater);
+        // *************************
+        
+        
         //Initially iterated over the the input nodes. Doesn't work when the ontology and annotation were split into
         //two separate files, because the ontology no longer contains the chemicals.
         //Now iterates over the pValue Map.
@@ -115,6 +137,7 @@ public class ChebiGraph {
             // ontology object to get rid of the numerical identifier restriction. 
             addTermWithRelationsToGraph(ontology, node);
         }
+
     }
 
     /**

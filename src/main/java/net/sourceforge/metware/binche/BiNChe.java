@@ -292,9 +292,11 @@ public class BiNChe {
 
             inputNodes.add(content[0]);
             if (content.length == 2) {
+                // not used !!
                 String name[] = new String[content[0].split(":").length];
                 name = content[0].split(":");
-
+                //
+                
                 inputWeights.put(content[0], Double.parseDouble(content[1]));
             }
         }

@@ -12,6 +12,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.DecimalFormat;
+import java.util.Set;
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.Map;
@@ -32,9 +33,10 @@ public class DotWriter {
      * @param filenameOut 
      * @param correctID defines the correct id which is then printed as an rectangle in the graph
      * @param printNames defines if Names of the Chebi instances should be included into the nodes
+     * @param InputNodes defines a Set of Strings containing the Input Nodes
      */
-    public void writeEvaluationDot(ChebiGraph graph, ColorGradient colorGrad, String filenameOut, LinkedList<String> correctID, boolean printNames){    
-
+    public void writeEvaluationDot(ChebiGraph graph, ColorGradient colorGrad, String filenameOut, LinkedList<String> correctID, boolean printNames, Set<String> InputNodes){    
+       
         try {
             BufferedWriter out = new BufferedWriter(new FileWriter(new File(filenameOut)));
       
@@ -49,6 +51,10 @@ public class DotWriter {
                 for(ChebiVertex v : graph.getVertices()) {
                     String ID = v.getChebiId();
                     String box ="";
+                    String style = "filled";
+                    if(InputNodes.contains("CHEBI:"+ID)){ 
+                        style = "filled,dashed"; 
+                    }
                     if(correctID.contains(ID)){
                         box=" shape=box ";
                     }
@@ -63,14 +69,14 @@ public class DotWriter {
                     if(printNames){
                         out.write(indent + ID + " [ label=\""+ v.getChebiName() +"\\nCHEBI:"+v.getChebiId()+"\\np="+ ((pval==0.0) ? 0 : (pval==1.0) ? 1.0 : form.format(pval)) +"\""  
                                     + box 
-                                    + " style=filled fillcolor=" 
+                                    + " style=\""+ style +"\" fillcolor=" 
                                     // invert saturation value alpha and scale in [0,1]
                                     + "\".0 "+ saturation +" 1.0\""
                                     +" ]\n");
                     }else{
                         out.write(indent + ID + " [ label=\"CHEBI:"+v.getChebiId()+"\\np="+ ((pval==0.0) ? 0 : (pval==1.0) ? 1.0 : form.format(pval)) +"\""  
                                 + box 
-                                + " style=filled fillcolor=" 
+                                + " style=\""+ style +"\" fillcolor=" 
                                 // invert saturation value alpha and scale in [0,1]
                                 + "\".0 "+ saturation +" 1.0\""
                                 +" ]\n");
@@ -81,6 +87,10 @@ public class DotWriter {
                 for(ChebiVertex v : graph.getVertices()) {
                     String ID = v.getChebiId();
                     String box ="";
+                    String style = "filled";
+                    if(InputNodes.contains("CHEBI:"+ID)){
+                        style = "filled,dashed"; 
+                    }
                     if(correctID.contains(ID)){
                         box=" shape=box ";
                     }
@@ -88,13 +98,13 @@ public class DotWriter {
                     if(printNames){
                         out.write(indent + ID + " [ label=\""+v.getChebiName()+"\\nCHEBI:"+v.getChebiId()+"\\np="+ ((pval==0.0) ? 0 : (pval==1.0) ? 1.0 : form.format(pval))+"\""  
                                     + box 
-                                    + " style=filled fillcolor=" 
+                                    + " style=\""+ style +"\" fillcolor=" 
                                     + getFillcolor(pval)
                                     +" ]\n");
                     }else{
                         out.write(indent + ID + " [ label=\"CHEBI:"+v.getChebiId()+"\\np="+ ((pval==0.0) ? 0 : (pval==1.0) ? 1.0 : form.format(pval))+"\""  
                                     + box 
-                                    + " style=filled fillcolor=" 
+                                    + " style=\""+ style +"\" fillcolor=" 
                                     + getFillcolor(pval)
                                     +" ]\n");
                     }
@@ -103,7 +113,7 @@ public class DotWriter {
             // alle edges
            for(ChebiEdge e : graph.getEdges()) {
                String[] splits =  e.getId().split("-");
-               out.write(indent + splits[1] + connector + splits[0] +" [ ]\n");
+               out.write(indent + splits[1] + connector + splits[0] +" [ dir=back ]\n");
            }
            out.write("}");
             out.close();

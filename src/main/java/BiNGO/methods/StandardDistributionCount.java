@@ -248,12 +248,13 @@ public class StandardDistributionCount implements DistributionCount {
         Map map = new HashMap();
 
         Iterator i = nodes.iterator();
-        while (i.hasNext()) {
-            Set classifications = getNodeClassifications(i.next().toString());
+        while (i.hasNext()) {  // foreach node in nodes
+            Set classifications = getNodeClassifications(i.next().toString()); // S:get ALL classes the node is assigned to (also transitive!)
             Iterator iterator = classifications.iterator();
             Integer id;
 
             // puts the classification counts in a map
+            // each node is stored with the number of leafs assigned under it
             while (iterator.hasNext()) {
                 id = new Integer(iterator.next().toString());
                 if (map.containsKey(id)) {
@@ -277,6 +278,8 @@ public class StandardDistributionCount implements DistributionCount {
         mapBigN = new HashMap();
         int bigN = refNodes.size();
         Iterator i = refNodes.iterator();
+
+        // S: remove unclassified nodes
         while (i.hasNext()) {
             Set<String> classifications = getNodeClassifications(i.next().toString());
             Iterator iterator = classifications.iterator();
@@ -321,11 +324,21 @@ public class StandardDistributionCount implements DistributionCount {
             Set<String> classifications = getNodeClassifications(node);
 //            System.out.println(node);
             for (String nodeClass : classifications) {
-                if (!mapWeightSums.containsKey(Integer.parseInt(nodeClass))) {
-                    mapWeightSums.put(Integer.parseInt(nodeClass), weights.get(node));
-                } else {
-                    Double current = mapWeightSums.get(Integer.parseInt(nodeClass));
-                    mapWeightSums.put(Integer.parseInt(nodeClass), current + weights.get(node));
+                
+                // walk only the parents for each node!
+                if(Integer.parseInt(nodeClass) != Integer.parseInt(node.substring(6, node.length()))){ 
+              
+                               
+                    if (!mapWeightSums.containsKey(Integer.parseInt(nodeClass))) {
+                        //System.out.println(Integer.parseInt(nodeClass)+" : "+ Integer.parseInt(node.substring(6, node.length())));
+                        //if(Integer.parseInt(nodeClass) == 6888){ System.out.println("PUT 6888 during classification of "+node);}
+
+                            mapWeightSums.put(Integer.parseInt(nodeClass), weights.get(node));
+
+                    } else {
+                        Double current = mapWeightSums.get(Integer.parseInt(nodeClass));
+                        mapWeightSums.put(Integer.parseInt(nodeClass), current + weights.get(node));
+                    }
                 }
 
             }
@@ -417,6 +430,7 @@ public class StandardDistributionCount implements DistributionCount {
         countBigN();
 
         if (weights.size() > 0) countWeight();
+        System.out.println("root weight = "+mapWeightSums.get(24431));
     }
 
     /**

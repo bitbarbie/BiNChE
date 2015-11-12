@@ -229,9 +229,9 @@ public class EvaluationMain extends CommandLineMain {
         ColorGradient cG = new ColorGradient(getListOfPValues(binche.getEnrichedNodes()), 0.05);
         
         if(hasOption("d")){
-            writer.writeEvaluationDot(chebiGraph, cG , outputPath+".dot", chebiID, true);
+            writer.writeEvaluationDot(chebiGraph, cG , outputPath+".dot", chebiID, true, binche.getInputNodes());
         }else{
-            writer.writeEvaluationDot(chebiGraph, cG , outputPath+".dot", chebiID, false);    
+            writer.writeEvaluationDot(chebiGraph, cG , outputPath+".dot", chebiID, false, binche.getInputNodes());    
         }
     }
 
@@ -342,9 +342,9 @@ public class EvaluationMain extends CommandLineMain {
         ColorGradient cG = new ColorGradient(getListOfPValues(binche.getEnrichedNodes()), 0.05);
         
         if(hasOption("d")){
-            writer.writeEvaluationDot(chebiGraph, cG , outputPath+".dot", chebiID, true);
+            writer.writeEvaluationDot(chebiGraph, cG , outputPath+".dot", chebiID, true, binche.getInputNodes() );
         }else{
-            writer.writeEvaluationDot(chebiGraph, cG , outputPath+".dot", chebiID, false);
+            writer.writeEvaluationDot(chebiGraph, cG , outputPath+".dot", chebiID, false, binche.getInputNodes() );
         }
     }
        
